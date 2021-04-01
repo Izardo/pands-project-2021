@@ -22,6 +22,8 @@ Matplotlib
 
 Intro to Fisher’s Iris Data Set
 
+Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
+
 Acquiring the data
 
 
