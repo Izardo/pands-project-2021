@@ -33,8 +33,7 @@ The df.info() function returns some basic information about the dataset.[1] Firs
 
 The pd.set_option() function allows us to view the entire dataset (i.e., 150 rows and 5 columns). It takes in two parameters: pat (a specified option) and value (in our case, the amount of rows we wish to display).[2]
 
-In[1]
-```def dataInfo(x):
+In[1] ```def dataInfo(x):
     print(x)
     x = df.info()
     print(x) 
