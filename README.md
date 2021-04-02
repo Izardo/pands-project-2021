@@ -36,7 +36,8 @@ The pd.set_option() function allows us to view the entire dataset (i.e., 150 row
 ```def dataInfo(x):
     print(x)
     x = df.info()
-    print(x) ```
+    print(x) 
+```
 
 References: 
 
