@@ -1,17 +1,26 @@
-import numpy as np
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 
-plt.style.use('ggplot')
+df = pd.read_csv('IRIS.csv')
 
-# ensure all rowns/columns are displayed when printed
-# pd.set_option('display.max_rows', None, 'display.max_columns', None)
+# access basic info
+def dataInfo(x):
+    print(x)
+    x = df.info()
+    print(x)
 
-# reading in the data from the csv file
-irisData = pd.read_csv('IRIS.csv')
+def viewFull(x):
+    pd.set_option('display.max_rows', 150)
+    print(x)
 
-# returns a tuple representing the dimensionaloty of the data frame
-# irisData.shape
+# view summary
 
-irisData.head()
-#print(irisData)
+# main menu 
+print("Iris dataset main menu\n 1. For basic dataset information: press 1\n 3. To view the entire dataset: press 2\n 3. For the dataset summary: press 3")
+
+# main program 
+choice = input("Please select an option: ")
+
+if choice == "1":
+    print("The following is an overview of the data, displaying the first and last 5 lines of the dataframe")
