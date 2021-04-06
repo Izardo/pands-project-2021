@@ -55,25 +55,19 @@ df = pd.read_csv('IRIS.csv')
 ```
 
 Simply using the print() function with the name of the DataFrame in the brackets will allow  you to preview the data, printing the first and last 5 rows of the dataset.
-
+'''
+print(df)
+'''
 ![Preview data set](screenshots/print(df).png "Preview")
 
-The info() function from the pandas library prints prints a concise summary about the dataframe.[2]
-
-![Screenshot of consice summary output](screenshots/info().png "Concise summary")
-
- and further, using the pandas df.info() function, it tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
+The info() function from the pandas library prints prints a concise summary about the dataframe.[2] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
 
 The quantitative are all of type float64 and the categorical is of object type. This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which ensures data integrity and prevents potentially inaccurate conclusions.
 
+![Screenshot of consice summary output](screenshots/info().png "Concise summary")
+
 The pd.set_option() function allows us to view the entire dataset (i.e., 150 rows and 5 columns). It takes in two parameters: pat (a specified option) and value (in our case, the amount of rows we wish to display).[3]
 
-```
-def dataInfo(x):
-    print(x)
-    x = df.info()
-    print(x) 
-```
 
 References: 
 
