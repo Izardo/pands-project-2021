@@ -55,9 +55,9 @@ df = pd.read_csv('IRIS.csv')
 ```
 
 Simply using the print() function with the name of the DataFrame in the brackets will allow  you to preview the data, printing the first and last 5 rows of the dataset.
-'''
+```
 print(df)
-'''
+```
 ![Preview data set](screenshots/print(df).png "Preview")
 
 The info() function from the pandas library prints prints a concise summary about the dataframe.[2] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
