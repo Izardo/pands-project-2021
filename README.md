@@ -20,7 +20,7 @@ Numpy
 
 Matplotlib
 
-## 1.0 Intro to Fisher’s Iris Data Set
+### 1.0 Intro to Fisher’s Iris Data Set
 
 Attribute Information:
 
@@ -40,7 +40,7 @@ Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
 
 ### 1.3 Getting a feel for the data:
 
-## Basic Statistical Analysis
+#### Basic Statistical Analysis
 
 First, we must import all of libraries needed for our analysis. 
 ```
