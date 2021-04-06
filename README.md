@@ -49,7 +49,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-Next, we load our IRIS.csv file with pandas. CSV stands for comma-seperated value and these file types are commonly used in analysing data. Pandas is a very useful way to manipulate data and CSV files. Pandas stores data in DataFrames, a way to store 2 dimensional data.[1]
+Next, we load our IRIS.csv file with pandas. CSV stands for comma-seperated value and is this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files. While DataFrames are pandas way of storing 2 dimensional data.[1]
 ```
 df = pd.read_csv('IRIS.csv')
 ```
