@@ -49,21 +49,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-Next, we load our IRIS.csv file with pandas. CSV stands for comma-seperated value and is this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files. While DataFrames are pandas way of storing 2 dimensional data.[1]
+Next, we load our IRIS.csv file with pandas. CSV stands for comma-seperated value and this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files, while DataFrames are pandas way of storing 2 dimensional data.[1]
 ```
 df = pd.read_csv('IRIS.csv')
 ```
 
-The info() function from the pandas library prints prints a concise summary about the dataframe.[2] First, it returns the first and last 5 lines of the dataset and further, using the pandas df.info() function, it tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
+Simply using the print() function with the name of the DataFrame in the brackets will allow  you to preview the data, printing the first and last 5 rows of the dataset.
+
+![Preview data set](screenshots/print(df).png "Preview")
+
+The info() function from the pandas library prints prints a concise summary about the dataframe.[2]
+
+![Screenshot of consice summary output](screenshots/info().png "Concise summary")
+
+ and further, using the pandas df.info() function, it tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
 
 The quantitative are all of type float64 and the categorical is of object type. This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which ensures data integrity and prevents potentially inaccurate conclusions.
 
 The pd.set_option() function allows us to view the entire dataset (i.e., 150 rows and 5 columns). It takes in two parameters: pat (a specified option) and value (in our case, the amount of rows we wish to display).[3]
 
-``` In[1]   def dataInfo(x):
-                print(x)
-                x = df.info()
-                print(x) 
+```
+def dataInfo(x):
+    print(x)
+    x = df.info()
+    print(x) 
 ```
 
 References: 
