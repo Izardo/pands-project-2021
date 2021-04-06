@@ -4,7 +4,7 @@
 
 This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. 
 
-Project Objectives
+#### Project Objectives
 
 Research the data set and write a summary about it.
 
