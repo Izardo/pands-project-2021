@@ -40,14 +40,10 @@ Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
 
 #### Correcting incorrect data
 
-It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were inconrguent with values in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specified the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. 
-
-Seen below are the incorrect values:
+It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were inconrguent with values in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specified the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below are the incorrect values, followed by the corrected values:
 
 ![Preview data set](screenshots/incorrect_values.png "Incorrect data")</br>
 *Incorrect data*
-
-Corrected values:
 
 ![Preview data set](screenshots/corrected_values.png "Correct data")</br>
 *Corrected data*
