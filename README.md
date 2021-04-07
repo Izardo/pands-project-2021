@@ -61,7 +61,7 @@ Simply using the print() function with the name of the DataFrame in the brackets
 ```
 print(df)
 ```
-![Preview data set](screenshots/figure1.png "Preview")
+![Preview data set](screenshots/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
 #### Viewing the basic information (Shape, attributes etc.)
 
@@ -69,7 +69,7 @@ The info() function from the pandas library prints a concise summary about the d
 
 The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 
-![Screenshot of consice summary output](screenshots/figure2.png "Concise summary")
+![Screenshot of consice summary output](screenshots/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
 
 #### Mean, Median & 
