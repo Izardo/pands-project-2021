@@ -38,9 +38,9 @@ Attribute Information:
 [Add some basic info about kaggle here]
 Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
 
-#### Correcting incorrect data
+#### Correcting the data
 
-It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were inconrguent with values in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specified the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below are the incorrect values, followed by the corrected values:
+It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
 ![Preview data set](screenshots/incorrect_values.png "Incorrect data")</br>
 *Incorrect data*
@@ -48,7 +48,7 @@ It has been noted that some Iris datasets available contain incorrect values.[1]
 ![Preview data set](screenshots/corrected_values.png "Correct data")</br>
 *Corrected data*
 
-References:
+References: </br>
 [1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, archive.ics.uci.edu/ml/datasets/iris
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
 ### 1.3 Basic Statistical Analysis:
@@ -85,7 +85,8 @@ The quantitative are all of type float (length and height of sepal or petal) and
 ![Screenshot of consice summary output](screenshots/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
 
-#### Mean, Median & 
+#### Summary of data
+
 References: 
 
 [1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/

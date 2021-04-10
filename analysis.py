@@ -2,6 +2,7 @@
 
 # Author: Isabella Doyle
 # imports libraries
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,9 +30,8 @@ def viewFullSummary(x):
 # side-by-side summary of species
 # REF: Describe Function With Groupby Pandas (Python 3.5.1), 7 Apr. 2021, ayhan,
 # https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
-def distinctSummary(x):
+def summaryGrouped(x):
     summary = x.groupby('species').describe()
-    summary.round(decimals = 2)
     print(summary)
 
 # seperate summaries
@@ -40,8 +40,16 @@ def individualSummary(x, y):    # x = the dataframe you wish to use, y = the col
                                                 # Jenny Palomino, Leah Wasser, 7 Apr. 2021, www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/run-calculations-summary-statistics-pandas-dataframes/
     print(summary)
 
+# boxplot summary using matplotlib
+def viewBoxplot():      # boxplot gives univariate form of the individual attributes
+    df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False) # find out what these mean
+    plt.show()
+    plt.savefig('box.png')
+
+# calling the functions
+viewBoxplot()
 individualSummary(df, "Iris-setosa")
-#distinctSummary(df)
+summaryGrouped(df)
 #viewFull(df)  
 #dataInfo(df)
 #viewSummary(df)
