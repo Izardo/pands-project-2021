@@ -8,7 +8,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 
 Research the data set and write a summary about it.
 
-The project description can be found at the following link:
+The project description can be found at the following link: (download pdf, place in same folder & link here)
 
 ### Tools used
 
@@ -25,11 +25,18 @@ Pandas - for data manipulation and analysis. It reads and writes data while prov
 Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code. 
 
 <u>Visual Studio Code</u>
-Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. VSCode aims to facilitate developers with quick, effecient 'code-build-debug cycles'.[1]
+Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
 References: </br>
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 ### 1.0 Introduction to Fisher’s Iris Data Set
+
+Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] 
+
+As indicated in the article title, this dataset's problem is taxonomic in nature.
+
+
+(insert screenshot preview of Fishers original data set table) 
 
 Attribute Information:
 
@@ -42,6 +49,9 @@ Attribute Information:
 -- Iris Versicolour
 -- Iris Virginica
 
+References:
+[1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
+[2] Britannica, The Editors of Encyclopaedia. "Sir Ronald Aylmer Fisher". Encyclopedia Britannica, 13 Feb. 2021, https://www.britannica.com/biography/Ronald-Aylmer-Fisher. Accessed 13 April 2021.
 ### 1.1 Acquiring the data
 
 [Add some basic info about kaggle here]
@@ -87,7 +97,7 @@ print(df)
 *The typical appearance of a pandas DataFrame*
 #### Acquiring some basic information on the data (Shape, attributes etc.)
 
-The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
+The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 rows and 5 columns. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
 
 The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 
