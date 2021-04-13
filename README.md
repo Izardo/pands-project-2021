@@ -1,4 +1,4 @@
-# pands-project-2021
+# Pands-project-2021
 
 ### Project Introduction
 
@@ -12,15 +12,22 @@ The project description can be found at the following link:
 
 ### Tools used
 
-Python 3.7
+##### Python 3.7
+Python is a widely used programming language, specifically in the world of data science. The language is known for its ease of use, extensive open-source libraries and active community. 
 
-VSCode
+##### Python Libraries
+NumPy, Pandas and Matplotlib are some of the most important libraries used in data analysis.
 
-Numpy
+NumPy - a core tool in scientific computing, it allows us to store and manipulate data as multidimensional array objects. 
 
-Matplotlib
+Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
 
-### 1.0 Intro to Fisher’s Iris Data Set
+##### Visual Studio Code
+Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. VSCode aims to facilitate developers with quick, effecient 'code-build-debug cycles'.[1]
+
+References:
+[1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
+### 1.0 Introduction to Fisher’s Iris Data Set
 
 Attribute Information:
 
@@ -76,7 +83,7 @@ print(df)
 ```
 ![Preview data set](screenshots/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
-#### Viewing the basic information (Shape, attributes etc.)
+#### Acquiring some basic information on the data (Shape, attributes etc.)
 
 The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 columns and 5 rows. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
 
