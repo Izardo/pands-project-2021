@@ -8,7 +8,6 @@ This project was undertaken as part of the Programming and Scripting assessment 
 
 Research the data set and write a summary about it.
 
-
 The project description can be found at the following link: (download pdf, place in same folder & link here)
 
 ### Tools used
@@ -35,21 +34,21 @@ References: </br>
 
 Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
 
-The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson. For this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Belowe is a preview of Fisher's Iris Data Set.
+The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson. For this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Below is a preview of Fisher's Iris Data Set.
 
 ![Preview Iris Data Set](screenshots/Fisher_data_preview.png "Fisher's Data Set")</br>
 *Preview of Fisher's Iris Data Set*
 
-Attribute Information:
+##### Attribute Information
 
 1. sepal length in cm
 2. sepal width in cm
 3. petal length in cm
 4. petal width in cm
-5. class:
--- Iris Setosa
--- Iris Versicolour
--- Iris Virginica
+5. class: <ul>
+<li> Iris Setosa
+<li> Iris Versicolour
+<li> Iris Virginica </ul>
 
 References:</br>
 [1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.</br>
@@ -115,3 +114,6 @@ References:
 [1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/
 [2] "Python Pandas read_csv – Load Data from CSV Files" Shane Lynn, 6 Apr. 2021, www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
 [3] 4 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html
+
+Other references:
+https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
