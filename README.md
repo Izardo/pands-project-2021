@@ -40,15 +40,15 @@ The Iris data set contains 150 records of individual Iris flowers which were ori
 *Preview of Fisher's Iris Data Set*
 
 ##### Attribute Information
-
-1. sepal length in cm
-2. sepal width in cm
-3. petal length in cm
-4. petal width in cm
-5. class: <ul>
+<ol>
+<li>1. sepal length in cm
+<li>2. sepal width in cm
+<li>3. petal length in cm
+<li>4. petal width in cm
+<li>5. class: <ul>
 <li> Iris Setosa
 <li> Iris Versicolour
-<li> Iris Virginica </ul>
+<li> Iris Virginica </ul></ol>
 
 References:</br>
 [1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.</br>
