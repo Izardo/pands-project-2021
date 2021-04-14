@@ -17,13 +17,13 @@ Python 3.7</br>
 Python is a widely used programming language, specifically in the world of data science. The language is known for its ease of use, extensive open-source libraries and active community. All of which optimise visualisation, understanding and presentation of data. 
 
 Python Libraries</br>
-NumPy, Pandas and Matplotlib are some of the most important libraries used in data analysis.
+<ul><li>NumPy, Pandas and Matplotlib are some of the most important libraries used in data analysis.
 
-NumPy - a core tool in scientific computing, it allows us to store and manipulate data as multidimensional array objects in Python.
+<li>NumPy - a core tool in scientific computing, it allows us to store and manipulate data as multidimensional array objects in Python.
 
-Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
+<li>Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
 
-Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code. 
+<li>Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.</ul>
 
 Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
