@@ -13,10 +13,10 @@ The project description can be found at the following link: (download pdf, place
 
 ### Tools used
 
-<u>Python 3.7</u>
+Python 3.7</br>
 Python is a widely used programming language, specifically in the world of data science. The language is known for its ease of use, extensive open-source libraries and active community. All of which optimise visualisation, understanding and presentation of data. 
 
-<u>Python Libraries</u>
+Python Libraries</br>
 NumPy, Pandas and Matplotlib are some of the most important libraries used in data analysis.
 
 NumPy - a core tool in scientific computing, it allows us to store and manipulate data as multidimensional array objects in Python.
@@ -25,16 +25,17 @@ Pandas - for data manipulation and analysis. It reads and writes data while prov
 
 Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code. 
 
-<u>Visual Studio Code</u>
+Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
 References: </br>
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
+
 ### 1.0 Introduction to Fisher’s Iris Data Set
 
 Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
 
-The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson. For this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured (in centimetres): sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Belowe is a preview of Fisher's Iris Data Set.
+The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson. For this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Belowe is a preview of Fisher's Iris Data Set.
 
 ![Preview Iris Data Set](screenshots/Fisher_data_preview.png "Fisher's Data Set")</br>
 *Preview of Fisher's Iris Data Set*
