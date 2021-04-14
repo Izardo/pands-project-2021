@@ -8,6 +8,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 
 Research the data set and write a summary about it.
 
+
 The project description can be found at the following link: (download pdf, place in same folder & link here)
 
 ### Tools used
@@ -31,12 +32,12 @@ References: </br>
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 ### 1.0 Introduction to Fisher’s Iris Data Set
 
-Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] 
+Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
 
-As indicated in the article title, this dataset's problem is taxonomic in nature.
+The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson. For this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured (in centimetres): sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Belowe is a preview of Fisher's Iris Data Set.
 
-
-(insert screenshot preview of Fishers original data set table) 
+![Preview Iris Data Set](screenshots/Fisher_data_preview.png "Fisher's Data Set")</br>
+*Preview of Fisher's Iris Data Set*
 
 Attribute Information:
 
@@ -49,9 +50,11 @@ Attribute Information:
 -- Iris Versicolour
 -- Iris Virginica
 
-References:
-[1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
-[2] Britannica, The Editors of Encyclopaedia. "Sir Ronald Aylmer Fisher". Encyclopedia Britannica, 13 Feb. 2021, https://www.britannica.com/biography/Ronald-Aylmer-Fisher. Accessed 13 April 2021.
+References:</br>
+[1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.</br>
+[2] Britannica, The Editors of Encyclopaedia. "Sir Ronald Aylmer Fisher". Encyclopedia Britannica, 13 Feb. 2021, https://www.britannica.com/biography/Ronald-Aylmer-Fisher. Accessed 13 April 2021.</br>
+[3] Hald, Anders (1998). *A History of Mathematical Statistics.* New York: Wiley. </br>
+[4] Efron, Bradley (1998), "R. A. Fisher in the 21st century", Statistical Science, 13 (2): 95–122, doi:10.1214/ss/1028905930.
 ### 1.1 Acquiring the data
 
 [Add some basic info about kaggle here]
@@ -97,9 +100,9 @@ print(df)
 *The typical appearance of a pandas DataFrame*
 #### Acquiring some basic information on the data (Shape, attributes etc.)
 
-The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with that is, a DataFrame, which is a 2-dimensional array with 150 rows and 5 columns. It tells us that there are 5 columns (or attributes): 4 of which are quantitative, sepal_length, sepal_width, petal_length, petal_width, while one, species, is categorical. Further, it returns the data type of each attribute. Moreover, the first four attributes are known as independent variables while the class label is known as dependent. 
+The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
-The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
+Further, it returns the data type of each attribute. The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 
 ![Screenshot of consice summary output](screenshots/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
