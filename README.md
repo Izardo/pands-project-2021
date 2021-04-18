@@ -34,7 +34,7 @@ References: </br>
 </br>
 <p align="center">
     <img src="images/iris_types.jpeg" alt="iris species" width="500"/>
-    <figcaption>Species of Iris flower in data set</figcaption>
+    <em>Species of Iris flower in data set</em>
 </p>
 
 Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
