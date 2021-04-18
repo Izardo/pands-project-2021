@@ -33,7 +33,7 @@ References: </br>
 ### 1.0 Introduction to Fisher’s Iris Data Set
 </br>
 <p align="center">
-    <img src="images/iris_types.jpeg" alt="iris species" width="500"/> </br>
+    <img src="images/iris_types.jpeg" alt="iris species" width="700"/> </br>
     <em>Species of Iris flower in data set</em>
 </p>
 
