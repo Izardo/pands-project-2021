@@ -15,7 +15,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 <li>Explain what tools are used in your analysis and how you implemented them.
 <li>Discuss compelling examples of how others have analysed the data set
 <li>Write a conclusion with your findings and insights.
-</ul>
+</ol>
 
 The project description can be found at the following link: [here](pdfs/Project 2021 description.pdf)
 
