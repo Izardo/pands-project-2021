@@ -17,7 +17,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 <li>Write a conclusion with your findings and insights.
 </ol>
 
-The project description can be found at the following link: [here](./pdfs/Project 2021 description.pdf)
+The project description can be found at the following link: [here](./Project 2021 description.pdf)
 
 ### Tools used
 
