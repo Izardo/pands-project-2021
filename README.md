@@ -129,10 +129,10 @@ Further, it returns the data type of each attribute. The quantitative are all of
 
 The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile, upper quartile and maximum value. Here is the output of the describe() method used on our data:
 
-![Describing the data](screenshots/df.describe()1.png "Describing the data")</br>
+![Describing the data](pngs/df.describe()1.png "Describing the data")</br>
 *Describing the data using the describe() function fig.1*
 
-![Describing the data](screenshots/df.describe()2.png "Describing the data")</br>
+![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
 To observe the spread of data in a data set, a box plot is used to represent just that. 
