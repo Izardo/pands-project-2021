@@ -6,7 +6,16 @@ This project was undertaken as part of the Programming and Scripting assessment 
 
 #### Project Objectives
 
-Research the data set and write a summary about it.
+<ol><li>Research the data set and write a summary about it.
+<li>Write a program called analysis.py that:
+<ul><li>outputs a summary of each variable to a single text file
+<li>saves a histogram of each variable to png files, and
+<li>outputs a scatter plot of each pair of variables.</ul>
+<li>Use screenshots and images to explain your workings.
+<li>Explain what tools are used in your analysis and how you implemented them.
+<li>Discuss compelling examples of how others have analysed the data set
+<li>Write a conclusion with your findings and insights.
+</ul>
 
 The project description can be found at the following link: (download pdf, place in same folder & link here)
 
@@ -22,7 +31,8 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
 
-<li>Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.</ul>
+<li>Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
+
 
 ##### Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
@@ -97,7 +107,7 @@ df = pd.read_csv('IRIS.csv')
 ```
 #### Previewing the data
 
-Simply using the print() function with the name of the DataFrame in the brackets will give a preview of the data, printing the first and last 5 rows of the dataset.
+Simply using the print() function with the name of the DataFrame in the brackets will give a preview of the data, printing the first and last 5 rows of the dataset. This gives an initial "feel" for the data and the values contained in the set. 
 ```
 print(df)
 ```
