@@ -38,7 +38,8 @@ Python is a widely used programming language, specifically in the world of data 
 ##### Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
-References: </br>
+References:
+
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
 ## 1.0 Introduction to Fisher’s Iris Data Set
@@ -52,7 +53,7 @@ Fisher's Iris data set, also known as the Iris flower data set, is a multivariat
 
 The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson and for this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Below is a preview of Fisher's Iris Data Set.
 
-![Preview Iris Data Set](screenshots/Fisher_data_preview.png "Fisher's Data Set")</br>
+![Preview Iris Data Set](pngs/Fisher_data_preview.png "Fisher's Data Set")</br>
 *Preview of Fisher's Iris Data Set*
 
 ##### Attribute Information
@@ -80,13 +81,14 @@ Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
 
 It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
-![Preview data set](screenshots/incorrect_values.png "Incorrect data")</br>
+![Preview data set](pngs/incorrect_values.png "Incorrect data")</br>
 *Incorrect data*
 
-![Preview data set](screenshots/corrected_values.png "Correct data")</br>
+![Preview data set](pngs/corrected_values.png "Correct data")</br>
 *Corrected data*
 
-References: </br>
+References:
+
 [1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, archive.ics.uci.edu/ml/datasets/iris
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
 ### 1.3 Basic Statistical Analysis:
@@ -112,7 +114,7 @@ Simply using the print() function with the name of the DataFrame in the brackets
 ```
 print(df)
 ```
-![Preview data set](screenshots/figure1.png "Preview")</br>
+![Preview data set](pngs/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
 #### Acquiring some basic information on the data (Shape, attributes etc.)
 
@@ -120,10 +122,20 @@ The info() function from the pandas library prints a concise summary about the d
 
 Further, it returns the data type of each attribute. The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 
-![Screenshot of consice summary output](screenshots/figure2.png "Concise summary")</br>
+![Screenshot of consice summary output](pngs/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
 
-#### Summary of data
+#### Describing the data
+
+The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile, upper quartile and maximum value. Here is the output of the describe() method used on our data:
+
+![Describing the data](screenshots/df.describe()1.png "Describing the data")</br>
+*Describing the data using the describe() function fig.1*
+
+![Describing the data](screenshots/df.describe()2.png "Describing the data")</br>
+*Describing the data using the describe() function fig.2*
+
+To observe the spread of data in a data set, a box plot is used to represent just that. 
 
 References: 
 
