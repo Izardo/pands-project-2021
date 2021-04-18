@@ -31,7 +31,7 @@ References: </br>
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
 ### 1.0 Introduction to Fisher’s Iris Data Set
-<p>
+<p align="center">
     <img src="images/iris_types.jpeg" alt="iris species" width="500"/> </br>
 </p>
 *Species of Iris flower in data set*
