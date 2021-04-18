@@ -30,7 +30,7 @@ Also known as VSCode, it is an efficient code editor with convenient tools such 
 References: </br>
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
-### 1.0 Introduction to Fisher’s Iris Data Set
+## 1.0 Introduction to Fisher’s Iris Data Set
 </br>
 <p align="center">
     <img src="images/iris_types.jpeg" alt="iris species" width="600"/> </br>
