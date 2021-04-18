@@ -17,7 +17,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 <li>Write a conclusion with your findings and insights.
 </ul>
 
-The project description can be found at the following link: (download pdf, place in same folder & link here)
+The project description can be found at the following link: [here](pdfs/Project 2021 description.pdf)
 
 ### Tools used
 
@@ -33,6 +33,7 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
 
+<li>Seaborn - </ul>
 
 ##### Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
