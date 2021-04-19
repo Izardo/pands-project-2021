@@ -51,7 +51,7 @@ References:
 
 Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
 
-The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson and for this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Below is a preview of Fisher's Iris Data Set.
+The Iris data set contains 150 records of individual Iris flowers which were originally collected by Edgar Anderson and for this reason, the data set is sometimes referred to as the Anderson data set.[1] Fisher established a linear algebriac equation to assess whether his samples could be used to classify different Iris species based on the flower's morphology. There were four attributes measured: sepal length, sepal width, petal length and petal width. Fisher observed three seperate species from the sample set: Iris setosa, Iris versicolor and Iris virginica. Below is a preview of Fisher's Iris Data Set. The full original data set can be found [here](./pngs/Fisher's_og_data.png)
 
 ![Preview Iris Data Set](pngs/Fisher_data_preview.png "Fisher's Data Set")</br>
 *Preview of Fisher's Iris Data Set*
@@ -127,7 +127,7 @@ Further, it returns the data type of each attribute. The quantitative are all of
 
 #### Describing the data
 
-The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile, upper quartile and maximum value. Here is the output of the describe() method used on our data:
+The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute.[4] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
 
 ![Describing the data](pngs/df.describe()1.png "Describing the data")</br>
 *Describing the data using the describe() function fig.1*
@@ -135,13 +135,18 @@ The describe() function, from the pandas library, outputs a basic statistical su
 ![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
-To observe the spread of data in a data set, a box plot is used to represent just that. 
+##### Graphical summaries
+
+To visualise the spread of the data, a box plot graph can be useful. The following graph displays the same data as in the screenshots above however, a box plot visualisation quickly identifies any outliers in our dataset. 
+
+![Summary box plot](pngs/box.png "Summary box plot")</br>
+*Describing the data using the describe() function fig.2*
 
 References: 
 
 [1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/
 [2] "Python Pandas read_csv – Load Data from CSV Files" Shane Lynn, 6 Apr. 2021, www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
 [3] 4 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html
-
+[4] "pandas.DataFrame.describe" 18 Apr. 2021https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
 Other references:
 https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
