@@ -42,11 +42,11 @@ def individualSummary(x, y):    # x = the dataframe you wish to use, y = the col
     print(summary)
 
 # Adopted from: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
-def allBox():
+def boxAll():
     sns.set(style="ticks") 
-    plt.figure(figsize=(12,10))
+    plt.figure(figsize = (12,10))
     plt.subplot(2,2,1)
-    sns.boxplot(x='species',y='sepal_length',data=df)
+    sns.boxplot(x='species',y ='sepal_length',data=df)
     plt.subplot(2,2,2)
     sns.boxplot(x='species',y='sepal_width',data=df)
     plt.subplot(2,2,3)
@@ -54,12 +54,24 @@ def allBox():
     plt.subplot(2,2,4)
     sns.boxplot(x='species',y='petal_width',data=df)
     plt.show()
-    plt.savefig('boxplots')
 
-# def violinBoxplot():
+def allViolin():
+    sns.set(style="whitegrid")
+    plt.figure(figsize=(12,10))
+    plt.subplot(2,2,1)
+    sns.violinplot(x='species',y='sepal_length',data=df)
+    plt.subplot(2,2,2)
+    sns.violinplot(x='species',y='sepal_width',data=df)
+    plt.subplot(2,2,3)
+    sns.violinplot(x='species',y='petal_length',data=df)
+    plt.subplot(2,2,4)
+    sns.violinplot(x='species',y='petal_width',data=df)
+    plt.show()
+
 
 # calling the functions
-allBox()
+# boxAll()
+allViolin()
 #individualSummary(df, "Iris-setosa")
 #summaryGrouped(df)
 #viewFull(df)  
