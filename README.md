@@ -139,7 +139,7 @@ The describe() function, from the pandas library, outputs a basic statistical su
 
 To visualise the spread of the data, a box plot graph can be useful. The following graph displays the same data as in the screenshots above however, a box plot visualisation quickly identifies any outliers in our dataset. 
 
-![Box plots](./pngs/boxplots.png "Box plots")</br>
+![Box plots](/pngs/boxplots.png "Box plots")</br>
 *Box plots for each variable*
 
 References: 
