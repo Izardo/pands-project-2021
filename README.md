@@ -135,12 +135,19 @@ The describe() function, from the pandas library, outputs a basic statistical su
 ![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
-##### Graphical summaries
+#### Graphical summary - Box plots & Violin plots
 
-To visualise the spread of the data, a box plot graph can be useful. The following graph displays the same data as in the screenshots above however, a box plot visualisation quickly identifies any outliers in our dataset. 
+To visualise the spread of the data, a box plot graph can be useful. Using pyplot and seaborn to create the plot, the same data is displayed as the screenshots above, however, a box plot visualisation gives an intuitive depiction of the data and is specifically uselful for identifying outliers. Box plots deal with quantiative (numerical) data and split the data into quartiles.[5] The box shape indicates the first (Q1) to third quartile (Q3) and the horizontal line in the middle of the box (Q2) indicates the median of our data. The vertical lines stemming from the top and bottom of the boxes are called whiskers. The whiskers extend to indicate the lowest and highest non-outlier values in our data set, while the isolated points indicate the outliers.
 
 ![Box plots](/pngs/boxplots.png "Box plots")</br>
 *Box plots for each variable*
+
+An important observation here is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. 
+
+While box plots provides some general information about the distribution of our data, it lacks specificity however. Violin plots display the distribution of data at each point on the plot. Thus, providing a more in-depth picture of our data. 
+
+![Violin plots](/pngs/violinplot.png "Violin plots")</br>
+*Violin plot for each variable*
 
 References: 
 
@@ -150,3 +157,4 @@ References:
 [4] "pandas.DataFrame.describe" 18 Apr. 2021https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
 Other references:
 https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
+[5] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range.
