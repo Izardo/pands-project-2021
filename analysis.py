@@ -6,6 +6,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # reads in csv file and assigns data to variable 'df'
 df = pd.read_csv('IRIS.csv')
@@ -40,16 +41,27 @@ def individualSummary(x, y):    # x = the dataframe you wish to use, y = the col
                                                 # Jenny Palomino, Leah Wasser, 7 Apr. 2021, www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/run-calculations-summary-statistics-pandas-dataframes/
     print(summary)
 
-# boxplot summary using matplotlib
-def viewBoxplot():      # boxplot gives univariate form of the individual attributes
-    df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False) # find out what these mean
+# Adopted from: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
+def allBox():
+    sns.set(style="ticks") 
+    plt.figure(figsize=(12,10))
+    plt.subplot(2,2,1)
+    sns.boxplot(x='species',y='sepal_length',data=df)
+    plt.subplot(2,2,2)
+    sns.boxplot(x='species',y='sepal_width',data=df)
+    plt.subplot(2,2,3)
+    sns.boxplot(x='species',y='petal_length',data=df)
+    plt.subplot(2,2,4)
+    sns.boxplot(x='species',y='petal_width',data=df)
     plt.show()
-    plt.savefig('box.png')
+    plt.savefig('boxplots')
+
+# def violinBoxplot():
 
 # calling the functions
-viewBoxplot()
-individualSummary(df, "Iris-setosa")
-summaryGrouped(df)
+allBox()
+#individualSummary(df, "Iris-setosa")
+#summaryGrouped(df)
 #viewFull(df)  
 #dataInfo(df)
 #viewSummary(df)
