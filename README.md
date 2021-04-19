@@ -121,14 +121,18 @@ print(df)
 The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
 Further, it returns the data type of each attribute. The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
-
+```
+info(df)
+```
 ![Screenshot of consice summary output](pngs/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
 
 #### Describing the data
 
 The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute.[4] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
-
+```
+describe(df)
+```
 ![Describing the data](pngs/df.describe()1.png "Describing the data")</br>
 *Describing the data using the describe() function fig.1*
 
@@ -138,14 +142,40 @@ The describe() function, from the pandas library, outputs a basic statistical su
 #### Graphical summary - Box plots & Violin plots
 
 To visualise the spread of the data, a box plot graph can be useful. Using pyplot and seaborn to create the plot, the same data is displayed as the screenshots above, however, a box plot visualisation gives an intuitive depiction of the data and is specifically uselful for identifying outliers. Box plots deal with quantiative (numerical) data and split the data into quartiles.[5] The box shape indicates the first (Q1) to third quartile (Q3) and the horizontal line in the middle of the box (Q2) indicates the median of our data. The vertical lines stemming from the top and bottom of the boxes are called whiskers. The whiskers extend to indicate the lowest and highest non-outlier values in our data set, while the isolated points indicate the outliers.
-
+```
+def boxAll():
+    sns.set(style="ticks") 
+    plt.figure(figsize = (12,10))
+    plt.subplot(2,2,1)
+    sns.boxplot(x='species',y ='sepal_length',data=df)
+    plt.subplot(2,2,2)
+    sns.boxplot(x='species',y='sepal_width',data=df)
+    plt.subplot(2,2,3)
+    sns.boxplot(x='species',y='petal_length',data=df)
+    plt.subplot(2,2,4)
+    sns.boxplot(x='species',y='petal_width',data=df)
+    plt.show()
+```
 ![Box plots](/pngs/boxplots.png "Box plots")</br>
 *Box plots for each variable*
 
-An important observation here is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. 
+An important observation drawn from is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. 
 
 While box plots provides some general information about the distribution of our data, it lacks specificity however. Violin plots display the distribution of data at each point on the plot. Thus, providing a more in-depth picture of our data. 
-
+```
+def allViolin():
+    sns.set(style="whitegrid")
+    plt.figure(figsize=(12,10))
+    plt.subplot(2,2,1)
+    sns.violinplot(x='species',y='sepal_length',data=df)
+    plt.subplot(2,2,2)
+    sns.violinplot(x='species',y='sepal_width',data=df)
+    plt.subplot(2,2,3)
+    sns.violinplot(x='species',y='petal_length',data=df)
+    plt.subplot(2,2,4)
+    sns.violinplot(x='species',y='petal_width',data=df)
+    plt.show()
+```
 ![Violin plots](/pngs/violinplot.png "Violin plots")</br>
 *Violin plot for each variable*
 
