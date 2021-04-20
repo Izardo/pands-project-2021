@@ -11,6 +11,11 @@ import seaborn as sns
 # reads in csv file and assigns data to variable 'df'
 df = pd.read_csv('IRIS.csv')
 
+# splitting the DataFrame in 3 by the "species" attribute
+iris_setosa = df[df["species"] == "Iris-setosa"]
+iris_versicolor = df[df["species"] == "Iris-versicolor"]
+iris_virginica = df[df["species"] == "Iris-virginica"]
+
 # Functions to access basic info about the dataset
 def dataInfo(x): 
     print(x)            # print(df) prints first and last 5 lines of dataset
@@ -70,12 +75,29 @@ def allViolin():
     plt.show()
 
 def pairScatter():
-    plt.figure(figsize=(12,10))
     sns.set(style="darkgrid")
+    plt.figure()
     sns.pairplot(df, hue="species")
+    plt.savefig('pairPlot')
     plt.show()
 
-pairScatter()
+# https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+# adapted from https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
+def hist():
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend()
+    plt.savefig('distPlot_sepal_length')
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend()
+    plt.savefig('distPlot_sepal_width')
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend()
+    plt.savefig('distPlot_petal_length')
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend()
+    plt.savefig('distPlot_petal_width')
+    plt.show()
+
+
+
+hist()
+# pairScatter()
 # calling the functions
 # boxAll()
 # allViolin()
