@@ -70,6 +70,7 @@ def allViolin():
     plt.show()
 
 def pairScatter():
+    plt.figure(figsize=(12,10))
     sns.set(style="darkgrid")
     sns.pairplot(df, hue="species")
     plt.show()
