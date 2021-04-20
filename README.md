@@ -17,7 +17,7 @@ This project was undertaken as part of the Programming and Scripting assessment 
 <li>Write a conclusion with your findings and insights.
 </ol>
 
-The project description can be found at the following link: [Project description](./pdfs/Project_2021_description.pdf)
+The project description can be found: [here](./pdfs/Project_2021_description.pdf)
 
 ### Tools used
 
@@ -38,7 +38,7 @@ Python is a widely used programming language, specifically in the world of data 
 ##### Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
-References:
+References:</br>
 
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
@@ -68,6 +68,7 @@ The Iris data set contains 150 records of individual Iris flowers which were ori
 <li>Iris Virginica </ul></ol>
 
 References:</br>
+
 [1] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.</br>
 [2] Britannica, The Editors of Encyclopaedia. "Sir Ronald Aylmer Fisher". Encyclopedia Britannica, 13 Feb. 2021, https://www.britannica.com/biography/Ronald-Aylmer-Fisher. Accessed 13 April 2021.</br>
 [3] Hald, Anders (1998). *A History of Mathematical Statistics.* New York: Wiley. </br>
@@ -91,7 +92,7 @@ References:
 
 [1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, archive.ics.uci.edu/ml/datasets/iris
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
-### 1.3 Basic Statistical Analysis:
+### 1.2 Basic Statistical Analysis:
 
 #### Importing libraries
 
@@ -139,7 +140,7 @@ describe(df)
 ![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
-#### Graphical summary - Box plots & Violin plots
+### 1.3 Graphical summary - Box plots & Violin plots
 
 To visualise the spread of the data, a box plot graph can be useful. Using pyplot and seaborn to create the plot, the same data is displayed as the screenshots above, however, a box plot visualisation gives an intuitive depiction of the data and is specifically uselful for identifying outliers. Box plots deal with quantiative (numerical) data and split the data into quartiles.[5] The box shape indicates the first (Q1) to third quartile (Q3) and the horizontal line in the middle of the box (Q2) indicates the median of our data. The vertical lines stemming from the top and bottom of the boxes are called whiskers. The whiskers extend to indicate the lowest and highest non-outlier values in our data set, while the isolated points indicate the outliers.
 ```
@@ -159,9 +160,9 @@ def boxAll():
 ![Box plots](/pngs/boxplots.png "Box plots")</br>
 *Box plots for each variable*
 
-An important observation drawn from is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. 
+An important observation drawn from the box plot is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. 
 
-While box plots provides some general information about the distribution of our data, it lacks specificity however. Violin plots display the distribution of data at each point on the plot. Thus, providing a more in-depth picture of our data. 
+While box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
 ```
 def allViolin():
     sns.set(style="whitegrid")
