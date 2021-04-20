@@ -55,6 +55,7 @@ def boxAll():
     sns.boxplot(x='species',y='petal_width',data=df)
     plt.show()
 
+# https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
 def allViolin():
     sns.set(style="whitegrid")
     plt.figure(figsize=(12,10))
@@ -68,10 +69,15 @@ def allViolin():
     sns.violinplot(x='species',y='petal_width',data=df)
     plt.show()
 
+def pairScatter():
+    sns.set(style="darkgrid")
+    sns.pairplot(df, hue="species")
+    plt.show()
 
+pairScatter()
 # calling the functions
 # boxAll()
-allViolin()
+# allViolin()
 #individualSummary(df, "Iris-setosa")
 #summaryGrouped(df)
 #viewFull(df)  
