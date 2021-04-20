@@ -92,7 +92,7 @@ References:
 
 [1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, archive.ics.uci.edu/ml/datasets/iris
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
-### 1.2 Basic Statistical Analysis:
+### 1.2 Basic Statistical Analysis
 
 #### Importing libraries
 
@@ -117,7 +117,7 @@ print(df)
 ```
 ![Preview data set](pngs/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
-#### Acquiring some basic information on the data (Shape, attributes etc.)
+#### The basics (Shape, attributes etc.)
 
 The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
@@ -140,7 +140,7 @@ describe(df)
 ![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
-### 1.3 Graphical summary - Box plots & Violin plots
+#### Graphical summary - Box plots & Violin plots
 
 To visualise the spread of the data, a box plot graph can be useful. Using pyplot and seaborn to create the plot, the same data is displayed as the screenshots above, however, a box plot visualisation gives an intuitive depiction of the data and is specifically uselful for identifying outliers. Box plots deal with quantiative (numerical) data and split the data into quartiles.[5] The box shape indicates the first (Q1) to third quartile (Q3) and the horizontal line in the middle of the box (Q2) indicates the median of our data. The vertical lines stemming from the top and bottom of the boxes are called whiskers. The whiskers extend to indicate the lowest and highest non-outlier values in our data set, while the isolated points indicate the outliers.
 ```
@@ -179,6 +179,10 @@ def allViolin():
 ```
 ![Violin plots](/pngs/violinplot.png "Violin plots")</br>
 *Violin plot for each variable*
+
+With the violin plots we can see the structure of the data. The added density information allows us to observe, for example, that the Iris-setosa values are concentrated closer to the median. The Iris-setosa values are less spread out than the other species in regard to sepal-length, petal-length and petal-width, while there is considerable overlap of values bewteen the Iris-versicolor and the Iris-virginica. Now that a summary of the data set is completed and we have a general 'feel' for the data, it is time for the analysis. 
+
+### 2.0 Analysing the data
 
 References: 
 
