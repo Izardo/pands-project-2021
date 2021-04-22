@@ -1,8 +1,11 @@
 # Pands-project-2021
 
+### Project Introduction <a name="ProjectIntro"></a>
+
+This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
+
 ### Table of Contents
-* [Project Introduction](#ProjectIntro)
-    * [Project Objectives](#Objectives)
+* [Project Objectives](#Objectives)
     * [Tools used](#Tools)
 * [1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
     * [Attribute Information](#Attributes)
@@ -16,11 +19,6 @@
     * [Describing the data](#Describe)
     * [Graphical Summary - Box & Violin Plots](#Graphical)
 * [2.0 Analysing the data](#Analysis)
-
-
-### Project Introduction <a name="ProjectIntro"></a>
-
-This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
 
 #### Project Objectives <a name="Objectives"></a>
 
