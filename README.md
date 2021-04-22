@@ -1,9 +1,9 @@
 # Pands-project-2021
 
 ## Table of Contents
-<ul><li>[Project Introduction](#Project Objectives)</ul>
+[Project Introduction](#ProjectIntro)
 
-### Project Introduction
+### Project Introduction <a name="ProjectIntro"></a>
 
 This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
 
