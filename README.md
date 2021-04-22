@@ -1,13 +1,24 @@
 # Pands-project-2021
 
 ## Table of Contents
-[Project Introduction](#ProjectIntro)
+<ul><li>[Project Introduction](#ProjectIntro)
+<li>* [Project Objectives](#Objectives)
+<li>* [Tools used](#Tools)
+<li>[1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
+<li>* [Attribute Information](#Attributes)
+<li>[1.1 Acquiring the data](#1.1)
+<li>*[Correcting the data](#Correct)
+<li>[1.2 Basic Statistical Analysis](#Basic)
+<li>*[Graphical Summary - Box & Violin Plots](#Basic)
+<li>[2.0 Analysing the data](#Analysis)
+</ul>
+
 
 ### Project Introduction <a name="ProjectIntro"></a>
 
 This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
 
-#### Project Objectives
+#### Project Objectives <a name="Objectives"></a>
 
 <ol><li>Research the data set and write a summary about it.
 <li>Write a program called analysis.py that:
@@ -24,7 +35,7 @@ The project description can be found: [here](./pdfs/Project_2021_description.pdf
 
 Note: explanations of code snippets can be found in the analysis.py file in this repository
 
-### Tools used
+### Tools used <a name="Tools"></a>
 
 ##### Python 3.7</br>
 Python is a widely used programming language, specifically in the world of data science. The language is known for its ease of use, extensive open-source libraries and active community. All of which optimise visualisation, understanding and presentation of data. 
@@ -47,7 +58,7 @@ References:</br>
 
 [1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
-## 1.0 Introduction to Fisher’s Iris Data Set
+## 1.0 Introduction to Fisher’s Iris Data Set <a name="FisherIntro"></a>
 </br>
 <p align="center">
     <img src="pngs/Iris_petals&sepals.png" alt="iris species" width="600"/> </br>
@@ -61,7 +72,7 @@ The Iris data set contains 150 records of individual Iris flowers which were ori
 ![Preview Iris Data Set](pngs/Fisher_data_preview.png "Fisher's Data Set")</br>
 *Preview of Fisher's Iris Data Set*
 
-##### Attribute Information
+##### Attribute Information <a name="Attributes"></a>
 <ol>
 <li>sepal length in cm
 <li>sepal width in cm
@@ -78,12 +89,12 @@ References:</br>
 [2] Britannica, The Editors of Encyclopaedia. "Sir Ronald Aylmer Fisher". Encyclopedia Britannica, 13 Feb. 2021, https://www.britannica.com/biography/Ronald-Aylmer-Fisher. Accessed 13 April 2021.</br>
 [3] Hald, Anders (1998). *A History of Mathematical Statistics.* New York: Wiley. </br>
 [4] Efron, Bradley (1998), "R. A. Fisher in the 21st century", Statistical Science, 13 (2): 95–122, doi:10.1214/ss/1028905930.
-### 1.1 Acquiring the data
+### 1.1 Acquiring the data <a name="1.1"></a>
 
 [Add some basic info about kaggle here]
 Dataset obtained from: https://www.kaggle.com/arshid/iris-flower-dataset
 
-#### Correcting the data
+#### Correcting the data <a name="Correct"></a>
 
 It has been noted that some Iris datasets available contain incorrect values.[1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset.[2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
@@ -97,7 +108,7 @@ References:
 
 [1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, archive.ics.uci.edu/ml/datasets/iris
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
-### 1.2 Basic Statistical Analysis
+### 1.2 Basic Statistical Analysis <a name="Basic"></a>
 
 #### Importing libraries
 
@@ -145,7 +156,7 @@ describe(df)
 ![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
 *Describing the data using the describe() function fig.2*
 
-#### Graphical summary - Box plots & Violin plots
+#### Graphical summary - Box plots & Violin plots <a name="Graphical"></a>
 
 To visualise the spread of the data, a box plot graph can be useful. Using pyplot and seaborn to create the plot, the same data is displayed as the screenshots above, however, a box plot visualisation gives an intuitive depiction of the data and is specifically uselful for identifying outliers. Box plots deal with quantiative (numerical) data and split the data into quartiles.[5] The box shape indicates the first (Q1) to third quartile (Q3) and the horizontal line in the middle of the box (Q2) indicates the median of our data. The vertical lines stemming from the top and bottom of the boxes are called whiskers. The whiskers extend to indicate the lowest and highest non-outlier values in our data set, while the isolated points indicate the outliers.
 ```
@@ -196,5 +207,5 @@ Other references:
 https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
 [5] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range.
 
-### 2.0 Analysing the data
+### 2.0 Analysing the data <a name="Analysis"></a>
 
