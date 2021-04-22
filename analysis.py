@@ -1,43 +1,56 @@
 # This program analyses the Iris dataset
 
 # Author: Isabella Doyle
-# imports libraries
 
+# imports libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sys          
 
+# MAIN PROGRAM
 # reads in csv file and assigns data to variable 'df'
 df = pd.read_csv('IRIS.csv')
 
-# splitting the DataFrame in 3 by the "species" attribute
+# splits the DataFrame into 3 by the "species" attribute
 iris_setosa = df[df["species"] == "Iris-setosa"]
 iris_versicolor = df[df["species"] == "Iris-versicolor"]
 iris_virginica = df[df["species"] == "Iris-virginica"]
+speciesList = [iris_setosa, iris_versicolor, iris_virginica] 
 
-# Functions to access basic info about the dataset
-def dataInfo(x): 
-    print(x)            # print(df) prints first and last 5 lines of dataset
-    x = df.info()
-    print(x)
+# Saving summary statistics to a text file
+def summaryText():
+    sys.stdout = open ('variableSummary.txt', 'w') # sys.stout is standard output file # with open opens file and then closes it when finished
+    print(dataInfo())
+    print(summaryAll())
+    print(summaryBySpecies())
+    print(countSpecies())
 
-# prints full dataset to compare against Fisher's 
-def viewFull(x):
-    pd.set_option('display.max_rows', 150)
-    print(x)
+# Function to access basic info about the dataset
+def dataInfo():   
+    print(df)               # print(df) prints first and last 5 lines of dataset     
+    df.info()               # prints useful information about data set
 
 # view summary shows basic statistical information
 # may not be needed but gives us an instant range of values to familariase ourselves with the data
-def viewFullSummary(x):
-    describe = x.describe()
-    print(describe)
+def summaryAll():
+    print(df.describe())
+
+# https://stackoverflow.com/questions/20076195/what-is-the-most-efficient-way-of-counting-occurrences-in-pandas
+def countSpecies():
+    print(df['species'].value_counts())
+
+# prints full dataset to compare against Fisher's 
+def viewFull():
+    pd.set_option('display.max_rows', 150) # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
+    print(df)
 
 # side-by-side summary of species
 # REF: Describe Function With Groupby Pandas (Python 3.5.1), 7 Apr. 2021, ayhan,
 # https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
-def summaryGrouped(x):
-    summary = x.groupby('species').describe()
+def summaryBySpecies():
+    summary = df.groupby('species').describe()
     print(summary)
 
 # seperate summaries
@@ -76,28 +89,36 @@ def allViolin():
 
 def pairScatter():
     sns.set(style="darkgrid")
-    plt.figure()
     sns.pairplot(df, hue="species")
+    # plt.figure(figsize=(1,1))
     plt.savefig('pairPlot')
     plt.show()
 
+# This function plots a histogram & density plot for each attribute
 # https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
-# adapted from https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
+# adapted from: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
+# change legend font size: https://stackoverflow.com/questions/44880444/how-to-increase-the-font-size-of-the-legend-in-my-seaborn-plot
 def hist():
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend()
-    plt.savefig('distPlot_sepal_length')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend()
-    plt.savefig('distPlot_sepal_width')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend()
-    plt.savefig('distPlot_petal_length')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend()
-    plt.savefig('distPlot_petal_width')
-    plt.show()
+    # plots sepal length values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend(fontsize=12)   # increased legend fontsize
+    plt.savefig('pngs/distinctHist_sepal_length')
+    # plots sepal width values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
+    plt.savefig('pngs/distinctHist_sepal_width')
+    # plots petal length values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend(fontsize=12)
+    plt.savefig('pngs/distinctHist_petal_length')
+    # plots petal width values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend(fontsize=12)
+    # saves pngs of plots in pngs folder
+    plt.savefig('pngs/distinctHist_petal_width') 
+    # matplotlib opens 4 seperate windows displaying the plots just created
+    plt.show()                           
 
 
-
+#summaryText()
 hist()
-# pairScatter()
+#pairScatter()
 # calling the functions
 # boxAll()
 # allViolin()
@@ -106,6 +127,8 @@ hist()
 #viewFull(df)  
 #dataInfo(df)
 #viewSummary(df)
+
+
 
 '''# main menu 
 print("Iris dataset main menu\n 1. For basic dataset information: press 1\n 3. To view the entire dataset: press 2\n 3. For the dataset summary: press 3")
