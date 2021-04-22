@@ -1,10 +1,8 @@
 # Pands-project-2021
 
-### Project Introduction <a name="ProjectIntro"></a>
+## Project Introduction <a name="ProjectIntro"></a>
 
-This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset.
-
-The submission date for this project is the 30th of April, 2021.
+This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
 
 Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable module.
 
@@ -37,7 +35,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>Write a conclusion with your findings and insights.
 </ol>
 
-The project description can be found: [here](./pdfs/Project_2021_description.pdf)
+The project description can be found [here](./pdfs/Project_2021_description.pdf).
 
 ### Tools used <a name="Tools"></a>
 
@@ -51,16 +49,17 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
 
-<li>Matplotlib - The Matplotlib library is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
+<li>Matplotlib - is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
 
-<li>Seaborn - </ul>
+<li>Seaborn - is based on matplotlib and is a data visualisation library known for providing "a high-level interface for drawing attractive and informative statistical graphics". [1]</ul>
 
 ##### Visual Studio Code</br>
-Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[1] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
+Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[2] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
 References:</br>
 
-[1] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
+[1] ""seaborn: statistical data visualisation" Seaborn, 22 Apr. 2021, https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.
+[2] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, https://code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
 ## 1.0 Introduction to Fisher’s Iris Data Set <a name="FisherIntro"></a>
 </br>
