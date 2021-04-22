@@ -3,13 +3,18 @@
 ### Table of Contents
 * [Project Introduction](#ProjectIntro)
     * [Project Objectives](#Objectives)
-    * [Tools used](#Tools)
+        * [Tools used](#Tools)
 * [1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
     * [Attribute Information](#Attributes)
 * [1.1 Acquiring the data](#1.1)
     * [Correcting the data](#Correct)
 * [1.2 Basic Statistical Analysis](#Basic)
-    * [Graphical Summary - Box & Violin Plots](#Graphical)
+    * [Importing libraries](#Libraries)
+        * [Importing the data](#Import)
+            * [Previewing the data](#Preview)
+                * [The basics (Shape, attributes etc.)](#TheBasics)
+                    * [Describing the data](#Describe)
+                        * [Graphical Summary - Box & Violin Plots](#Graphical)
 * [2.0 Analysing the data](#Analysis)
 
 
@@ -109,7 +114,7 @@ References:
 [2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
 ### 1.2 Basic Statistical Analysis <a name="Basic"></a>
 
-#### Importing libraries
+#### Importing libraries <a name="Libraries"></a>
 
 First, we must import the libraries needed for our analysis. Note: an alias is used for simplification, i.e., pandas is simply referred to as pd. 
 ```
@@ -118,13 +123,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-#### Importing the data
+#### Importing the data <a name="Import"></a>
 
 Next, we load our IRIS.csv file with pandas.[1] CSV stands for comma-seperated value and this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files, while DataFrames are pandas way of storing 2 dimensional data.[2]
 ```
 df = pd.read_csv('IRIS.csv')
 ```
-#### Previewing the data
+#### Previewing the data <a name="Preview"></a>
 
 Simply using the print() function with the name of the DataFrame in the brackets will give a preview of the data, printing the first and last 5 rows of the dataset. This gives an initial "feel" for the data and the values contained in the set. 
 ```
@@ -132,7 +137,7 @@ print(df)
 ```
 ![Preview data set](pngs/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
-#### The basics (Shape, attributes etc.)
+#### The basics (Shape, attributes etc.) <a name="TheBasics"></a>
 
 The .info() method prints a concise summary of the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
@@ -143,7 +148,7 @@ df.info()
 ![Screenshot of consice summary output](pngs/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
 
-#### Describing the data
+#### Describing the data <a name="Describe"></a>
 
 The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute.[4] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
 ```
