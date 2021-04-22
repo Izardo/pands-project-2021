@@ -1,17 +1,16 @@
 # Pands-project-2021
 
 ## Table of Contents
-<ul><li>[Project Introduction](#ProjectIntro)
-<li>* [Project Objectives](#Objectives)
-<li>* [Tools used](#Tools)
-<li>[1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
-<li>* [Attribute Information](#Attributes)
-<li>[1.1 Acquiring the data](#1.1)
-<li>*[Correcting the data](#Correct)
-<li>[1.2 Basic Statistical Analysis](#Basic)
-<li>*[Graphical Summary - Box & Violin Plots](#Basic)
-<li>[2.0 Analysing the data](#Analysis)
-</ul>
+[Project Introduction](#ProjectIntro)
+* [Project Objectives](#Objectives)
+* [Tools used](#Tools)
+[1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
+* [Attribute Information](#Attributes)
+[1.1 Acquiring the data](#1.1)
+*[Correcting the data](#Correct)
+[1.2 Basic Statistical Analysis](#Basic)
+*[Graphical Summary - Box & Violin Plots](#Basic)
+[2.0 Analysing the data](#Analysis)
 
 
 ### Project Introduction <a name="ProjectIntro"></a>
