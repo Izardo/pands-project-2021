@@ -2,7 +2,7 @@
 
 ## Project Introduction <a name="ProjectIntro"></a>
 
-This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date for this project is the 30th of April, 2021.
+This project was undertaken as part of the Programming and Scripting assessment module, which is a core module in the Higher Diploma in Data Analytics at the Galway-Mayo Institute of Technology. The data researched in this project is the Iris datset. The submission date is the 30th of April, 2021.
 
 Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable module.
 
@@ -35,7 +35,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>Write a conclusion with your findings and insights.
 </ol>
 
-The project description can be found [here](./pdfs/Project_2021_description.pdf).
+<em>The project description can be found [here](./pdfs/Project_2021_description.pdf).</em>
 
 ### Tools used <a name="Tools"></a>
 
@@ -58,7 +58,7 @@ Also known as VSCode, it is an efficient code editor with convenient tools such 
 
 References:</br>
 
-[1] ""seaborn: statistical data visualisation" Seaborn, 22 Apr. 2021, https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.
+[1] ""seaborn: statistical data visualisation" Seaborn, 22 Apr. 2021, https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.</br>
 [2] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, https://code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
 ## 1.0 Introduction to Fisher’s Iris Data Set <a name="FisherIntro"></a>
