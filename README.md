@@ -19,6 +19,8 @@ This project was undertaken as part of the Programming and Scripting assessment 
 
 The project description can be found: [here](./pdfs/Project_2021_description.pdf)
 
+Note: explanations of code snippets can be found in the analysis.py file in this repository
+
 ### Tools used
 
 ##### Python 3.7</br>
@@ -45,8 +47,8 @@ References:</br>
 ## 1.0 Introduction to Fisher’s Iris Data Set
 </br>
 <p align="center">
-    <img src="images/iris_types.jpeg" alt="iris species" width="600"/> </br>
-    <em>Species of Iris flower in data set</em>
+    <img src="pngs/Iris_petals&sepals.png" alt="iris species" width="600"/> </br>
+    <em>The Species of Iris flower in data set</em>
 </p>
 
 Fisher's Iris data set, also known as the Iris flower data set, is a multivariate collection of data first presented by Ronald Fisher in 1936 in his article *The Use of Multiple Measurements in Taxonomic Problems*.[1] Fisher was a British statistician, geneticist and academic who spearheaded the implementation of statistical methods in the modelling of scientific experiments.[2] For this reason, Fisher has been regarded as “a genius who almost single-handedly created the foundations for modern statistical science”[3] and further, “the single most important figure in 20th century statistics”.[4] 
@@ -119,11 +121,11 @@ print(df)
 *The typical appearance of a pandas DataFrame*
 #### The basics (Shape, attributes etc.)
 
-The info() function from the pandas library prints a concise summary about the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
+The .info() method prints a concise summary of the dataframe.[3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
 Further, it returns the data type of each attribute. The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our dataset which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 ```
-info(df)
+df.info()
 ```
 ![Screenshot of consice summary output](pngs/figure2.png "Concise summary")</br>
 *Consice summary with pandas*
@@ -160,9 +162,8 @@ def boxAll():
 ![Box plots](/pngs/boxplots.png "Box plots")</br>
 *Box plots for each variable*
 
-An important observation drawn from the box plot is the number of outliers in our data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. 
 
-While box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
+An important piece of information that the box plot provides is the number of outliers in the data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. While box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
 ```
 def allViolin():
     sns.set(style="whitegrid")
@@ -180,9 +181,7 @@ def allViolin():
 ![Violin plots](/pngs/violinplot.png "Violin plots")</br>
 *Violin plot for each variable*
 
-With the violin plots we can see the structure of the data. The added density information allows us to observe, for example, that the Iris-setosa values are concentrated closer to the median. The Iris-setosa values are less spread out than the other species in regard to sepal-length, petal-length and petal-width, while there is considerable overlap of values bewteen the Iris-versicolor and the Iris-virginica. Now that a summary of the data set is completed and we have a general 'feel' for the data, it is time for the analysis. 
-
-### 2.0 Analysing the data
+With the violin plots we can see the structure of the data. The added density information allows us to observe, for example, that the Iris-setosa values are concentrated closer to the median. Meaning, the Iris-setosa values are less spread out than the other species in regard to sepal-length, petal-length and petal-width, while there is considerable overlap of those values between the Iris-versicolor and the Iris-virginica. Now that a summary of the data set is completed and we have a general 'feel' for the data, it is time for the analysis. 
 
 References: 
 
@@ -193,3 +192,6 @@ References:
 Other references:
 https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
 [5] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range.
+
+### 2.0 Analysing the data
+
