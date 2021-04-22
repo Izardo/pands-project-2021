@@ -4,13 +4,13 @@
 [Project Introduction](#ProjectIntro)
 * [Project Objectives](#Objectives)
 * [Tools used](#Tools)
-[1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
+1. [1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
 * [Attribute Information](#Attributes)
-[1.1 Acquiring the data](#1.1)
+1. 1 [1.1 Acquiring the data](#1.1)
 *[Correcting the data](#Correct)
-[1.2 Basic Statistical Analysis](#Basic)
+1. 2 [1.2 Basic Statistical Analysis](#Basic)
 *[Graphical Summary - Box & Violin Plots](#Basic)
-[2.0 Analysing the data](#Analysis)
+2. 0 [2.0 Analysing the data](#Analysis)
 
 
 ### Project Introduction <a name="ProjectIntro"></a>
