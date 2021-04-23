@@ -37,9 +37,12 @@ def dataInfo():
 def summaryAll():
     print(df.describe())
 
-# https://stackoverflow.com/questions/20076195/what-is-the-most-efficient-way-of-counting-occurrences-in-pandas
-def countSpecies():
-    print(df['species'].value_counts())
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html
+def countSpecies():                         # counts unique values in the column 'species'
+    print(df['species'].value_counts())     # returns the count of instances of each unique value
+    print(df['species'].value_counts(normalize=True, dropna=False)*100)  # return the percentage of occurances of each species, dropna=False means it will not include counts of NaN
+# https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
+
 
 # prints full dataset to compare against Fisher's 
 def viewFull():
@@ -115,9 +118,9 @@ def hist():
     # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show()                           
 
-
+countSpecies()
 #summaryText()
-hist()
+# hist()
 #pairScatter()
 # calling the functions
 # boxAll()
