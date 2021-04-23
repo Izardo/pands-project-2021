@@ -51,10 +51,10 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Matplotlib - is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
 
-<li>Seaborn - is based on matplotlib and is a data visualisation library known for providing "a high-level interface for drawing attractive and informative statistical graphics". [1]</ul>
+<li>Seaborn - is based on matplotlib and is a data visualisation library known for providing 'a high-level interface for drawing attractive and informative statistical graphics'. [1]</ul>
 
 ##### Visual Studio Code</br>
-Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'.[2] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
+Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'. [2] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
 
 References:</br>
 
@@ -97,13 +97,9 @@ References:</br>
 
 The Iris data set that will be studied in this project was obtained from Kaggle. [1] Kaggle is an online machine learning environment and data science community. [2] It offers competitions in machine learning, datasets and access to educational content. The data sets are published by users and are then available for others to use freely. Data sets are scored by users for their usability. The chosen data set chosen for this project had had a usability score of 8.2, which was deemed as satisfactory.
 
-References
-
-[1] "Iris Flower Dataset" MathNerd, 1 Apr. 2021, https://www.kaggle.com/arshid/iris-flower-dataset </br>
-[2] "Getting Started" Zeeshan-ul-hassan Usmani, 22 Apr. 2021, https://www.kaggle.com/getting-started/44916
 #### Correcting the data <a name="Correct"></a>
 
-It has been noted that some Iris datasets available contain incorrect values. [1] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [2] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
+It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
 ![Preview data set](pngs/incorrect_values.png "Incorrect data")</br>
 *Incorrect data*
@@ -113,8 +109,10 @@ It has been noted that some Iris datasets available contain incorrect values. [1
 
 References:
 
-[1] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, https://archive.ics.uci.edu/ml/datasets/iris </br>
-[2] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
+[1] "Iris Flower Dataset" MathNerd, 1 Apr. 2021, https://www.kaggle.com/arshid/iris-flower-dataset </br>
+[2] "Getting Started" Zeeshan-ul-hassan Usmani, 22 Apr. 2021, https://www.kaggle.com/getting-started/44916
+[3] "Iris Data Set" UCI Machine Learning Repository, 07 Apr. 2021, https://archive.ics.uci.edu/ml/datasets/iris </br>
+[4] Fisher, Ronald A. *"The use of multiple measurements in taxonomic problems."* Annals of eugenics 7.2 (1936): 179-188.
 ### 1.2 Basic Statistical Analysis <a name="Basic"></a>
 
 #### Importing libraries <a name="Libraries"></a>
