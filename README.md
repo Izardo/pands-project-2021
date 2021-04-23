@@ -151,8 +151,8 @@ df.info()
 
 Another useful tool when checking data is getting a count of occurances of a unique value. In our case, it would be beneficial to know the count of each species in the data set. The value_counts() method from the pandas library returns the frequency of unique values in a specified column in descending order, where the first element returned has the highest amount of instances. [4] 
 ```
- print(df['species'].value_counts()) 
-    print(df['species'].value_counts(normalize=True, dropna=False)*100)
+print(df['species'].value_counts()) 
+print(df['species'].value_counts(normalize=True, dropna=False)*100)
 ```
 ![Value_counts()](pngs/value_counts().png "Counts")</br>
 *Count & percentage of each species*
