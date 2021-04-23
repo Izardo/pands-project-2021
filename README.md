@@ -154,7 +154,7 @@ Another useful tool when checking data is getting a count of occurances of a uni
  print(df['species'].value_counts()) 
     print(df['species'].value_counts(normalize=True, dropna=False)*100)
 ```
-![Value_counts()](value_counts().png "Counts")</br>
+![Value_counts()](pngs/value_counts().png "Counts")</br>
 *Count & percentage of each species*
 #### Describing the data <a name="Describe"></a>
 
