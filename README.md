@@ -138,7 +138,7 @@ print(df)
 ```
 ![Preview data set](pngs/figure1.png "Preview")</br>
 *The typical appearance of a pandas DataFrame*
-#### The basics (Shape, attributes etc.) <a name="TheBasics"></a>
+#### The basics (Shape, attributes, counts etc.) <a name="TheBasics"></a>
 
 The .info() method prints a concise summary of the dataframe. [3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
@@ -150,7 +150,12 @@ df.info()
 *Consice summary with pandas*
 
 Another useful tool when checking data is getting a count of occurances of a unique value. In our case, it would be beneficial to know the count of each species in the data set. The value_counts() method from the pandas library returns the frequency of unique values in a specified column in descending order, where the first element returned has the highest amount of instances. [4] 
-
+```
+ print(df['species'].value_counts()) 
+    print(df['species'].value_counts(normalize=True, dropna=False)*100)
+```
+![Value_counts()](value_counts().png "Counts")</br>
+*Count & percentage of each species*
 #### Describing the data <a name="Describe"></a>
 
 The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. [5] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
