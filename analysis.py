@@ -9,58 +9,50 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys          
 
-# MAIN PROGRAM
-# reads in csv file and assigns data to variable 'df'
+# reads in csv file with pandas, converts it to a DataFrame object and assigns it to variable 'df'
+# Source: https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 df = pd.read_csv('IRIS.csv')
 
 # splits the DataFrame into 3 by the "species" attribute
 iris_setosa = df[df["species"] == "Iris-setosa"]
 iris_versicolor = df[df["species"] == "Iris-versicolor"]
 iris_virginica = df[df["species"] == "Iris-virginica"]
-speciesList = [iris_setosa, iris_versicolor, iris_virginica] 
+speciesList = [iris_setosa, iris_versicolor, iris_virginica]
+# Saving variable summary to a text file
+# Source: https://www.askpython.com/python/python-stdin-stdout-stderr
+def variableTextSummary():
+    sys.stdout = open ('variableSummary.txt', 'w') # sys.stout is standard output to text file
+    print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^")
+    print("Variable Summary")
+    print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^") 
+    print("------------------------------------------------------------------------------")
+    print("Preview of the first & last 5 records in the set, data shape, data types etc.")
+    print("------------------------------------------------------------------------------")    
+    print(print(df)) # print(df) prints first and last 5 lines of dataset 
+    print(df.info()) # prints useful information about data set 
+    print("------------------------------------------------------------------------------")
+    print("Statistical Summary of each Variable (Grouped by Species)")
+    print("------------------------------------------------------------------------------")
+    # displays a basic statistical summary of all variables side-by-side
+    # Source: https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
+    print(df.groupby('species').describe(include='all')) # include='all' returns all columns
+    print("------------------------------------------------------------------------------")
+    print("Percentage of Occurances of Species")
+    print("------------------------------------------------------------------------------")
+    # returns the percentage of occurances per species
+    # Source: https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
+    print(df['species'].value_counts(normalize=True, dropna=False)*100) # dropna=False means it will not include counts of NaN
 
-# Saving summary statistics to a text file
-def summaryText():
-    sys.stdout = open ('variableSummary.txt', 'w') # sys.stout is standard output file # with open opens file and then closes it when finished
-    print(dataInfo())
-    print(summaryAll())
-    print(summaryBySpecies())
-    print(countSpecies())
+# prints contents of 'variableSummary.txt' file
+def viewTextSummary():
+    text = open('variableSummary.txt', 'r') # opens 'variableSummary.txt' file in read mode and assigns it to the variable text
+    print(text.read()) # uses print statement & read() method to read & print contents of file
 
-# Function to access basic info about the dataset
-def dataInfo():   
-    print(df)               # print(df) prints first and last 5 lines of dataset     
-    df.info()               # prints useful information about data set
-
-# view summary shows basic statistical information
-# may not be needed but gives us an instant range of values to familariase ourselves with the data
-def summaryAll():
-    print(df.describe())
-
-# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html
-def countSpecies():                         # counts unique values in the column 'species'
-    print(df['species'].value_counts())     # returns the count of instances of each unique value
-    print(df['species'].value_counts(normalize=True, dropna=False)*100)  # return the percentage of occurances of each species, dropna=False means it will not include counts of NaN
-# https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
-
-
-# prints full dataset to compare against Fisher's 
+# prints full DataFrame
+# Source: https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
 def viewFull():
-    pd.set_option('display.max_rows', 150) # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
+    pd.set_option('display.max_rows', 150)
     print(df)
-
-# side-by-side summary of species
-# REF: Describe Function With Groupby Pandas (Python 3.5.1), 7 Apr. 2021, ayhan,
-# https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
-def summaryBySpecies():
-    summary = df.groupby('species').describe()
-    print(summary)
-
-# seperate summaries
-def individualSummary(x, y):    # x = the dataframe you wish to use, y = the column you wish to get a summary of
-    summary = x[x["species"] == y].describe()   # Ref: "Lesson 3. Run Calculations and Summary Statistics on Pandas Dataframes"
-                                                # Jenny Palomino, Leah Wasser, 7 Apr. 2021, www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/run-calculations-summary-statistics-pandas-dataframes/
-    print(summary)
 
 # Adopted from: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
 def boxAll():
@@ -118,20 +110,8 @@ def hist():
     # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show()                           
 
-countSpecies()
-#summaryText()
-# hist()
-#pairScatter()
-# calling the functions
-# boxAll()
-# allViolin()
-#individualSummary(df, "Iris-setosa")
-#summaryGrouped(df)
-#viewFull(df)  
-#dataInfo(df)
-#viewSummary(df)
-
-
+#variableTextSummary()
+viewTextSummary()
 
 '''# main menu 
 print("Iris dataset main menu\n 1. For basic dataset information: press 1\n 3. To view the entire dataset: press 2\n 3. For the dataset summary: press 3")
