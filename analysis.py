@@ -2,7 +2,7 @@
 
 # Author: Isabella Doyle
 
-# imports libraries
+# imports libraries and aliases each library for ease of use
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,9 +26,12 @@ def variableTextSummary():
     print("Variable Summary")
     print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^") 
     print("------------------------------------------------------------------------------")
-    print("Preview of the first & last 5 records in the set, data shape, data types etc.")
+    print("Preview of the first & last 5 records")
     print("------------------------------------------------------------------------------")    
-    print(print(df)) # print(df) prints first and last 5 lines of dataset 
+    print(df) # print(df) prints first and last 5 lines of dataset 
+    print("------------------------------------------------------------------------------")
+    print("Basic Information (Data Shape, Data Types etc.)")
+    print("------------------------------------------------------------------------------")
     print(df.info()) # prints useful information about data set 
     print("------------------------------------------------------------------------------")
     print("Statistical Summary of each Variable (Grouped by Species)")
@@ -37,7 +40,7 @@ def variableTextSummary():
     # Source: https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
     print(df.groupby('species').describe(include='all')) # include='all' returns all columns
     print("------------------------------------------------------------------------------")
-    print("Percentage of Occurances of Species")
+    print("Count of Species in Percentile")
     print("------------------------------------------------------------------------------")
     # returns the percentage of occurances per species
     # Source: https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
@@ -110,8 +113,8 @@ def hist():
     # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show()                           
 
-#variableTextSummary()
-viewTextSummary()
+variableTextSummary()
+#viewTextSummary()
 
 '''# main menu 
 print("Iris dataset main menu\n 1. For basic dataset information: press 1\n 3. To view the entire dataset: press 2\n 3. For the dataset summary: press 3")
