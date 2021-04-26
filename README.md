@@ -241,16 +241,16 @@ def hist():
 [1] 
 
 ![Sepal Length Histogram](/pngs/distinctHist_sepal_length.png "Sepal Length Histogram")</br>
-    *Sepal Length Histogram & Density Plot*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Sepal Length Histogram & Density Plot*
 
 ![Sepal Width Histogram](/pngs/distinctHist_sepal_width.png "Sepal Width Histogram")</br>
-    *Sepal Width Histogram & Density Plot*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Sepal Width Histogram & Density Plot*
 
 ![Petal Length Histogram](/pngs/distinctHist_petal_length.png "Petal Length Histogram")</br>
-    *Petal Length Histogram & Density Plot*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Petal Length Histogram & Density Plot*
 
 ![Petal Width Histogram](/pngs/distinctHist_petal_width.png "Petal Width Histogram")</br>
-    *Petal Width Histogram & Density Plot*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Petal Width Histogram & Density Plot*
 
 #### Pair plot
 
