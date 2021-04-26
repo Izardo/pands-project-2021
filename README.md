@@ -99,7 +99,7 @@ The Iris data set that will be studied in this project was obtained from Kaggle.
 
 #### Correcting the data <a name="Correct"></a>
 
-It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities found would need to be corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
+It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
 ![Preview data set](pngs/incorrect_values.png "Incorrect data")</br>
 *Incorrect data*
@@ -107,7 +107,7 @@ It has been noted that some Iris datasets available contain incorrect values. [3
 ![Preview data set](pngs/corrected_values.png "Correct data")</br>
 *Corrected data*
 
-References:
+References:</br>
 
 [1] "Iris Flower Dataset" MathNerd, 1 Apr. 2021, https://www.kaggle.com/arshid/iris-flower-dataset </br>
 [2] "Getting Started" Zeeshan-ul-hassan Usmani, 22 Apr. 2021, https://www.kaggle.com/getting-started/44916
@@ -140,7 +140,7 @@ print(df)
 *The typical appearance of a pandas DataFrame*
 #### The basics (Shape, attributes, counts etc.) <a name="TheBasics"></a>
 
-The .info() method prints a concise summary of the dataframe. [3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
+The info() method prints a concise summary of the dataframe. [3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
 
 Further, it returns the data type of each attribute. The quantitative are all of type float (length and height of sepal or petal) and the categorical is of object type (class: species). This will determine what type of analysis we can perform on the data. Next, it returns the memory usage of the dataset, which is 6.0KB. Finally, we can see that there are no non-null values in our data set which is significant in that it ensures data integrity and prevents any potentially inaccurate conclusions.
 ```
@@ -222,3 +222,37 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 ### 2.0 Analysing the data <a name="Analysis"></a>
 
+#### Histogram with density plot
+
+```
+def hist():
+    # plots sepal length values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend(fontsize=12)   # increased legend fontsize
+    plt.savefig('pngs/distinctHist_sepal_length')
+    # plots sepal width values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
+    plt.savefig('pngs/distinctHist_sepal_width')
+    # plots petal length values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend(fontsize=12)
+    plt.savefig('pngs/distinctHist_petal_length')
+    # plots petal width values
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend(fontsize=12)
+    # saves pngs of plots in pngs folder
+    plt.savefig('pngs/distinctHist_petal_width') 
+    # matplotlib opens 4 seperate windows displaying the plots just created
+    plt.show() 
+```
+
+![Sepal Length Histogram](/pngs/distinctHist_sepal_length.png "Sepal Length Histogram")</br>
+*Sepal Length Histogram & Density Plot*
+
+![Sepal Width Histogram](/pngs/distinctHist_sepal_width.png "Sepal Width Histogram")</br>
+*Sepal Width Histogram & Density Plot*
+
+![Petal Length Histogram](/pngs/distinctHist_petal_length.png "Petal Length Histogram")</br>
+*Petal Length Histogram & Density Plot*
+
+![Petal Width Histogram](/pngs/distinctHist_petal_width.png "Petal Width Histogram")</br>
+*Petal Width Histogram & Density Plot*
+
+#### Pair scatter plot
