@@ -254,7 +254,10 @@ def hist():
 
 #### Pair scatter plot
 
+The pair plot builds upon both the histogram and scatter plot, in that, it shows data of individual variables as well as the relationship between two variables. 
 
+![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
+*Pair Plot*
 
 References:
 
