@@ -244,16 +244,22 @@ def hist():
     <img src="pngs/distinctHist_sepal_length.png" width="650"/> </br>
     <em>Sepal Length Histogram & Density Plot</em>
 </p>
+&nbsp
+
 
 <p align="center">
     <img src="/pngs/distinctHist_sepal_width.png" width="650"/> </br>
     <em>Sepal Width Histogram & Density Plot</em>
 </p>
+&nbsp
+
 
 <p align="center">
     <img src="/pngs/distinctHist_petal_length.png" width="650"/> </br>
     <em>Petal Length Histogram & Density Plot</em>
 </p>
+&nbsp
+
 
 <p align="center">
     <img src="/pngs/distinctHist_petal_width.png" width="650"/> </br>
