@@ -240,22 +240,26 @@ def hist():
 ```
 [1] 
 
-![Sepal Length Histogram](/pngs/distinctHist_sepal_length.png "Sepal Length Histogram")</br>
-*Sepal Length Histogram & Density Plot*
-##
-##
-![Sepal Width Histogram](/pngs/distinctHist_sepal_width.png "Sepal Width Histogram")</br>
-*Sepal Width Histogram & Density Plot*
-##
-##
-![Petal Length Histogram](/pngs/distinctHist_petal_length.png "Petal Length Histogram")</br>
-*Petal Length Histogram & Density Plot*
-##
-##
-![Petal Width Histogram](/pngs/distinctHist_petal_width.png "Petal Width Histogram")</br>
-*Petal Width Histogram & Density Plot*
-##
-##
+<p align="center">
+    <img src="pngs/distinctHist_sepal_length.png" width="650"/> </br>
+    <em>Sepal Length Histogram & Density Plot</em>
+</p>
+
+<p align="center">
+    <img src="/pngs/distinctHist_sepal_width.png" width="650"/> </br>
+    <em>Sepal Width Histogram & Density Plot</em>
+</p>
+
+<p align="center">
+    <img src="/pngs/distinctHist_petal_length.png" width="650"/> </br>
+    <em>Petal Length Histogram & Density Plot</em>
+</p>
+
+<p align="center">
+    <img src="/pngs/distinctHist_petal_width.png" width="650"/> </br>
+    <em>Petal Width Histogram & Density Plot</em>
+</p>
+
 #### Pair plot
 
 The pair plot builds upon both the histogram and scatter plot, in that, it shows data of individual variables as well as the relationship between two variables. 
