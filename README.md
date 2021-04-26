@@ -244,6 +244,10 @@ def hist():
 *Sepal Length Histogram & Density Plot*
 &nbsp;
 &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ![Sepal Width Histogram](/pngs/distinctHist_sepal_width.png "Sepal Width Histogram")</br>
 *Sepal Width Histogram & Density Plot*
 &nbsp;
