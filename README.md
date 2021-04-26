@@ -11,7 +11,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [Tools used](#Tools)
 * [1.0 Introduction to Fisher’s Iris Data Set](#FisherIntro)
     * [Attribute Information](#Attributes)
-* [1.1 Acquiring the data](#1.1)
+* [1.1 Acquiring the Data](#1.1)
     * [Correcting the data](#Correct)
 * [1.2 Basic Statistical Analysis](#Basic)
     * [Importing libraries](#Libraries)
@@ -20,7 +20,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [The basics (Shape, attributes etc.)](#TheBasics)
     * [Describing the data](#Describe)
     * [Graphical Summary - Box & Violin Plots](#Graphical)
-* [2.0 Analysing the data](#Analysis)
+* [2.0 Analysing the Data](#Analysis)
 
 ### Project Objectives <a name="Objectives"></a>
 
@@ -214,8 +214,8 @@ References:
 [1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/</br>
 [2] "Python Pandas read_csv – Load Data from CSV Files" Shane Lynn, 6 Apr. 2021, www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/</br>
 [3] 4 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html</br>
-[4] "pandas.Series.value_counts" pandas, 23 Apr. 2021, https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html</br>
-[5] "pandas.DataFrame.describe" 18 Apr. 2021https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html</br>
+[4] "pandas.Series.value_counts" Pandas library, 23 Apr. 2021, https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html</br>
+[5] "pandas.DataFrame.describe" Pandas library, 18 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html</br>
 Other references:
 https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet</br>
 [6] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range
@@ -224,7 +224,7 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram with density plot
 
-With the following code, each histogram plot is merged with a density plot for observing the each variable for the three species. 
+With the following code, each histogram plot is merged with a density plot for observing each variable and comparing the measurements of all three species. 
 
 ```
 def hist():
@@ -241,18 +241,18 @@ def hist():
 [1] 
 
 ![Sepal Length Histogram](/pngs/distinctHist_sepal_length.png "Sepal Length Histogram")</br>
-*Sepal Length Histogram & Density Plot*
+    *Sepal Length Histogram & Density Plot*
 
 ![Sepal Width Histogram](/pngs/distinctHist_sepal_width.png "Sepal Width Histogram")</br>
-*Sepal Width Histogram & Density Plot*
+    *Sepal Width Histogram & Density Plot*
 
 ![Petal Length Histogram](/pngs/distinctHist_petal_length.png "Petal Length Histogram")</br>
-*Petal Length Histogram & Density Plot*
+    *Petal Length Histogram & Density Plot*
 
 ![Petal Width Histogram](/pngs/distinctHist_petal_width.png "Petal Width Histogram")</br>
-*Petal Width Histogram & Density Plot*
+    *Petal Width Histogram & Density Plot*
 
-#### Pair scatter plot
+#### Pair plot
 
 The pair plot builds upon both the histogram and scatter plot, in that, it shows data of individual variables as well as the relationship between two variables. 
 
