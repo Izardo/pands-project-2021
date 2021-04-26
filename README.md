@@ -224,24 +224,21 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram with density plot
 
+With the following code, each histogram plot is merged with a density plot for observing the each variable for the three species. 
+
 ```
 def hist():
-    # plots sepal length values
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend(fontsize=12)   # increased legend fontsize
+    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend(fontsize=12)
     plt.savefig('pngs/distinctHist_sepal_length')
-    # plots sepal width values
     sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
     plt.savefig('pngs/distinctHist_sepal_width')
-    # plots petal length values
     sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend(fontsize=12)
     plt.savefig('pngs/distinctHist_petal_length')
-    # plots petal width values
     sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend(fontsize=12)
-    # saves pngs of plots in pngs folder
     plt.savefig('pngs/distinctHist_petal_width') 
-    # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show() 
 ```
+[1] 
 
 ![Sepal Length Histogram](/pngs/distinctHist_sepal_length.png "Sepal Length Histogram")</br>
 *Sepal Length Histogram & Density Plot*
@@ -256,3 +253,4 @@ def hist():
 *Petal Width Histogram & Density Plot*
 
 #### Pair scatter plot
+
