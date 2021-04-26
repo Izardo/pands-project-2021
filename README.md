@@ -117,7 +117,7 @@ References:</br>
 
 #### Importing libraries <a name="Libraries"></a>
 
-First, we must import the libraries needed for our analysis. Note: an alias is used for simplification, i.e., pandas is simply referred to as pd. 
+First, we must import the libraries needed for our analysis. An alias is used for simplification, i.e., pandas is simply referred to as pd. 
 ```
 import pandas as pd
 import numpy as np
@@ -211,14 +211,14 @@ With the violin plots we can see the structure of the data. The added density in
 
 References: 
 
-[1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/
-[2] "Python Pandas read_csv – Load Data from CSV Files" Shane Lynn, 6 Apr. 2021, www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
-[3] 4 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html
-[4] "pandas.Series.value_counts" pandas, 23 Apr. 2021, https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html
-[5] "pandas.DataFrame.describe" 18 Apr. 2021https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+[1] "Using Pandas and Python to Explore Your Dataset" Reka Horvath, 1 Apr. 2021, https://realpython.com/pandas-python-explore-dataset/</br>
+[2] "Python Pandas read_csv – Load Data from CSV Files" Shane Lynn, 6 Apr. 2021, www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/</br>
+[3] 4 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html</br>
+[4] "pandas.Series.value_counts" pandas, 23 Apr. 2021, https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html</br>
+[5] "pandas.DataFrame.describe" 18 Apr. 2021https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html</br>
 Other references:
-https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet 
-[6] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range.
+https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet</br>
+[6] "Boxplots" Stat Trek, 19 Apr. 2021, https://stattrek.com/statistics/charts/boxplot.aspx#:~:text=If%20you%20are%20interested%20in,largest%20value%2C%20including%20any%20outliers.&text=The%20middle%20half%20of%20a%20data%20set%20falls%20within%20the%20interquartile%20range
 
 ### 2.0 Analysing the data <a name="Analysis"></a>
 
@@ -254,3 +254,9 @@ def hist():
 
 #### Pair scatter plot
 
+
+
+References:
+
+[1] "Exploratory Data Analysis: Uni-variate analysis of Iris Data set" Pratik Nabriya, 20 Apr. 2021, https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40Exploratory</br>
+[2] 
