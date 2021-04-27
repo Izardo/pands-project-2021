@@ -21,7 +21,10 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [Describing the data](#Describe)
     * [Graphical Summary - Box & Violin Plots](#Graphical)
 * [2.0 Analysing the Data](#Analysis)
-
+    * [Histogram & Density Plots](#Histogram) 
+    * [Scatter Plots](#Scatter)
+    * [Pair Plot](#PairPlot)
+* [3.0 Conclusion](#Conclusion)
 ### Project Objectives <a name="Objectives"></a>
 
 <ol><li>Research the data set and write a summary about it.
@@ -189,7 +192,7 @@ def boxAll():
 *Box plots for each variable*
 
 
-An important piece of information that the box plot provides is the number of outliers in the data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. While box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
+An important piece of information that the box plot provides is the number of outliers in the data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. However, while box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
 ```
 def allViolin():
     sns.set(style="whitegrid")
@@ -207,7 +210,7 @@ def allViolin():
 ![Violin plots](/pngs/violinplot.png "Violin plots")</br>
 *Violin plot for each variable*
 
-With the violin plots we can see the structure of the data. The added density information allows us to observe, for example, that the Iris-setosa values are concentrated closer to the median. Meaning, the Iris-setosa values are less spread out than the other species in regard to sepal-length, petal-length and petal-width, while there is considerable overlap of those values between the Iris-versicolor and the Iris-virginica. Now that a summary of the data set is completed and we have a general 'feel' for the data, it is time for the analysis. 
+With the violin plots we can see the structure of the data. The added density information allows us to observe, for example, that the Iris-setosa values are concentrated closer to the median. Meaning, the Iris-setosa values are less spread out than the other species in regard to sepal-length, petal-length and petal-width, while there is considerable overlap of those values between the Iris-versicolor and the Iris-virginica. Now that a summary of the data set is completed and we have a general 'feel' for the data, it is time for a more in-depth analysis. 
 
 References: 
 
@@ -222,9 +225,9 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 ### 2.0 Analysing the data <a name="Analysis"></a>
 
-#### Histogram with density plot
+#### Histogram & density plots <a name="Histogram">
 
-With the following code, each histogram plot is merged with a density plot for observing each variable and comparing the measurements of all three species. 
+With the following code, each histogram plot is merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [1]
 
 ```
 def hist():
@@ -237,15 +240,14 @@ def hist():
     sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend(fontsize=12)
     plt.savefig('pngs/distinctHist_petal_width') 
     plt.show() 
-```
-[1] 
+``` 
 
 <p align="center">
     <img src="pngs/distinctHist_sepal_length.png" width="650"/> </br>
     <em>Sepal Length Histogram & Density Plot</em>
 </p>
-&nbsp
 
+As seen in the plot above, there is significant overlap in the sepal length of the three species. For this reason this, this variable is not suitable distinguishing the species'. 
 
 <p align="center">
     <img src="/pngs/distinctHist_sepal_width.png" width="650"/> </br>
@@ -266,7 +268,10 @@ def hist():
     <em>Petal Width Histogram & Density Plot</em>
 </p>
 
-#### Pair plot
+#### Scatter Plots
+
+
+#### Pair plots
 
 The pair plot builds upon both the histogram and scatter plot, in that, it shows data of individual variables as well as the relationship between two variables. 
 
