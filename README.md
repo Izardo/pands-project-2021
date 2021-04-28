@@ -254,21 +254,21 @@ def hist():
 ``` 
 
 <p align="center">
-    <img src="pngs/distinctHist_sepal_length.png" width="650"/> </br>
+    <img src="pngs/distinctHist_sepal_length.png" width="400"/> </br>
 </p>
 
 As seen in the plot above, there is significant overlap in the sepal length of the three species. For this reason this, this variable is not suitable distinguishing the species'. 
 
 <p align="center">
-    <img src="/pngs/distinctHist_sepal_width.png" width="550"/> </br>
+    <img src="/pngs/distinctHist_sepal_width.png" width="400"/> </br>
 </p>
 
 <p align="center">
-    <img src="/pngs/distinctHist_petal_length.png" width="550"/> </br>
+    <img src="/pngs/distinctHist_petal_length.png" width="400"/> </br>
 </p>
 
 <p align="center">
-    <img src="/pngs/distinctHist_petal_width.png" width="550"/> </br>
+    <img src="/pngs/distinctHist_petal_width.png" width="400"/> </br>
 </p>
 
 #### Pair plots
