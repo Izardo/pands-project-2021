@@ -83,27 +83,27 @@ speciesList = [iris_setosa, iris_versicolor, iris_virginica]
 def hist():
     # plots sepal length values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"sepal_length").add_legend(fontsize=12)   # increased legend fontsize # hue inclued each subset (species) of data in the plot
+    plt.title("Sepal Length Histogram & Density Plot")
     plt.ylabel("Frequency")
     plt.xlabel("Sepal Length in cm")
-    plt.title("Sepal Length Histogram & Density Plot")
     plt.savefig('pngs/distinctHist_sepal_length') # saves pngs of plots in pngs folder
     # plots sepal width values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
     plt.ylabel("Frequency")
-    plt.xlabel("Sepal width in cm")
     plt.title("Sepal Width Histogram & Density Plot")
+    plt.xlabel("Sepal width in cm")
     plt.savefig('pngs/distinctHist_sepal_width')
     # plots petal length values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"petal_length").add_legend(fontsize=12)
+    plt.title("Petal Length Histogram & Density Plot")
     plt.ylabel("Frequency")
     plt.xlabel("Petal length in cm")
-    plt.title("Petal Length Histogram & Density Plot")
     plt.savefig('pngs/distinctHist_petal_length')
     # plots petal width values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"petal_width").add_legend(fontsize=12)
+    plt.title("Petal Width Histogram & Density Plot")
     plt.ylabel("Frequency")
     plt.xlabel("Petal width in cm")
-    plt.title("Petal Width Histogram & Density Plot")
     plt.savefig('pngs/distinctHist_petal_width')
     # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show()
