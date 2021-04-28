@@ -37,6 +37,8 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>Write a conclusion with your findings and insights.
 </ol>
 
+Note: The code snippets contained in this repository are explained in a general sense only. Comprehensive code explanations are available in the analysis.py file so as to not clutter this readme unnecessarily. 
+
 <em>The project description can be found [here](./pdfs/Project_2021_description.pdf).</em>
 
 ### Tools used <a name="Tools"></a>
@@ -257,7 +259,7 @@ def hist():
     <img src="pngs/distinctHist_sepal_length.png" width="400"/> </br>
 </p>
 
-As seen in the plot above, there is significant overlap in the sepal length of the three species. For this reason this, this variable is not suitable distinguishing the species'. 
+As seen in the plot above, there is significant overlap in the sepal length of the three species. For this reason, sepal length is not a suitable attribute for distinguishing the species'. 
 
 <p align="center">
     <img src="/pngs/distinctHist_sepal_width.png" width="400"/> </br>
