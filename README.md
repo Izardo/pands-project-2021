@@ -230,41 +230,45 @@ The following code was created using FacetGrid from the Seaborn library. FacetGr
 
 ```
 def hist():
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_length").add_legend(fontsize=12)
+    sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"sepal_length").add_legend(fontsize=10)
+    plt.title("Sepal Length Histogram & Density Plot")
+    plt.xlabel("Sepal Length in cm")
+    plt.subplots_adjust(top=0.8)
     plt.savefig('pngs/distinctHist_sepal_length')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
+    sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"sepal_width").add_legend(fontsize=10)
+    plt.title("Sepal Width Histogram & Density Plot")
+    plt.xlabel("Sepal width in cm")
+    plt.subplots_adjust(top=0.8)
     plt.savefig('pngs/distinctHist_sepal_width')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_length").add_legend(fontsize=12)
+    sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"petal_length").add_legend(fontsize=10)
+    plt.title("Petal Length Histogram & Density Plot")
+    plt.xlabel("Petal length in cm")
+    plt.subplots_adjust(top=0.8)
     plt.savefig('pngs/distinctHist_petal_length')
-    sns.FacetGrid(df,hue="species",height=7).map(sns.distplot,"petal_width").add_legend(fontsize=12)
-    plt.savefig('pngs/distinctHist_petal_width') 
-    plt.show() 
+    sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"petal_width").add_legend(fontsize=10)
+    plt.title("Petal Width Histogram & Density Plot")
+    plt.xlabel("Petal width in cm")
+    plt.subplots_adjust(top=0.8)
+    plt.savefig('pngs/distinctHist_petal_width')
+    plt.show()
 ``` 
 
 <p align="center">
     <img src="pngs/distinctHist_sepal_length.png" width="650"/> </br>
-    <em>Sepal Length Histogram & Density Plot</em>
 </p>
 
 As seen in the plot above, there is significant overlap in the sepal length of the three species. For this reason this, this variable is not suitable distinguishing the species'. 
 
 <p align="center">
-    <img src="/pngs/distinctHist_sepal_width.png" width="650"/> </br>
-    <em>Sepal Width Histogram & Density Plot</em>
+    <img src="/pngs/distinctHist_sepal_width.png" width="550"/> </br>
 </p>
-&nbsp
-
 
 <p align="center">
-    <img src="/pngs/distinctHist_petal_length.png" width="650"/> </br>
-    <em>Petal Length Histogram & Density Plot</em>
+    <img src="/pngs/distinctHist_petal_length.png" width="550"/> </br>
 </p>
-&nbsp
-
 
 <p align="center">
-    <img src="/pngs/distinctHist_petal_width.png" width="650"/> </br>
-    <em>Petal Width Histogram & Density Plot</em>
+    <img src="/pngs/distinctHist_petal_width.png" width="550"/> </br>
 </p>
 
 #### Pair plots
