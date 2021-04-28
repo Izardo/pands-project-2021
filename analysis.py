@@ -84,25 +84,21 @@ def hist():
     # plots sepal length values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"sepal_length").add_legend(fontsize=12)   # increased legend fontsize # hue inclued each subset (species) of data in the plot
     plt.title("Sepal Length Histogram & Density Plot")
-    plt.ylabel("Frequency")
     plt.xlabel("Sepal Length in cm")
     plt.savefig('pngs/distinctHist_sepal_length') # saves pngs of plots in pngs folder
     # plots sepal width values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"sepal_width").add_legend(fontsize=12)
-    plt.ylabel("Frequency")
     plt.title("Sepal Width Histogram & Density Plot")
     plt.xlabel("Sepal width in cm")
     plt.savefig('pngs/distinctHist_sepal_width')
     # plots petal length values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"petal_length").add_legend(fontsize=12)
     plt.title("Petal Length Histogram & Density Plot")
-    plt.ylabel("Frequency")
     plt.xlabel("Petal length in cm")
     plt.savefig('pngs/distinctHist_petal_length')
     # plots petal width values
     sns.FacetGrid(df,hue="species",height=6).map(sns.distplot,"petal_width").add_legend(fontsize=12)
     plt.title("Petal Width Histogram & Density Plot")
-    plt.ylabel("Frequency")
     plt.xlabel("Petal width in cm")
     plt.savefig('pngs/distinctHist_petal_width')
     # matplotlib opens 4 seperate windows displaying the plots just created
@@ -171,4 +167,5 @@ https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
 https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
 https://stackoverflow.com/questions/44880444/how-to-increase-the-font-size-of-the-legend-in-my-seaborn-plot
 https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf
-https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/'''
+https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+https://www.w3schools.com/python/matplotlib_labels.asp add legend'''
