@@ -22,7 +22,6 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [Graphical Summary - Box & Violin Plots](#Graphical)
 * [2.0 Analysing the Data](#Analysis)
     * [Histogram & Density Plots](#Histogram) 
-    * [Scatter Plots](#Scatter)
     * [Pair Plot](#PairPlot)
 * [3.0 Conclusion](#Conclusion)
 ### Project Objectives <a name="Objectives"></a>
@@ -227,7 +226,7 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram & density plots <a name="Histogram">
 
-With the following code, each histogram plot is merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [1]
+The following code was created using FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
 
 ```
 def hist():
@@ -268,17 +267,15 @@ As seen in the plot above, there is significant overlap in the sepal length of t
     <em>Petal Width Histogram & Density Plot</em>
 </p>
 
-#### Scatter Plots
-
-
 #### Pair plots
 
-The pair plot builds upon both the histogram and scatter plot, in that, it shows data of individual variables as well as the relationship between two variables. 
+The pair plot builds upon both the histogram and scatter plot in that, it shows data of individual variables as well as the relationship between two variables. 
 
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
 
 References:
 
-[1] "Exploratory Data Analysis: Uni-variate analysis of Iris Data set" Pratik Nabriya, 20 Apr. 2021, https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40Exploratory</br>
+[1] "seaborn.FacetGrid" Seaborn, 27 Apr. 2021, https://seaborn.pydata.org/generated/seaborn.FacetGrid.html</br>
+[2] "Exploratory Data Analysis: Uni-variate analysis of Iris Data set" Pratik Nabriya, 20 Apr. 2021, https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40Exploratory</br>
 [2] 
