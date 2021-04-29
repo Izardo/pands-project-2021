@@ -171,7 +171,7 @@ print(df['species'].value_counts())
 print(df['species'].value_counts(normalize=True, dropna=False)*100)
 ```
 <p align="left">
-    <img src="pngs/value_counts().png" width="300"/> </br>
+    <img src="pngs/value_counts().png" width="250"/> </br>
     <em>Count & percentage of count of each species</em>
 </p>
 
@@ -182,11 +182,11 @@ The describe() function, from the pandas library, outputs a basic statistical su
 describe(df)
 ```
 <p align="left">
-    <img src="pngs/df.describe()1.png" width="600"/> </br>
+    <img src="pngs/df.describe()1.png" width="900"/> </br>
     <em>Describing the data (1)</em>
 </p>
 <p align="left">
-    <img src="pngs/df.describe()2.png" width="400"/> </br>
+    <img src="pngs/df.describe()2.png" width="600"/> </br>
     <em>Describing the data (2)</em>
 </p>
 
