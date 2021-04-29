@@ -104,14 +104,14 @@ The Iris data set that will be studied in this project was obtained from Kaggle.
 #### Correcting the data <a name="Correct"></a>
 
 It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
-
-<p align="center">
-    <img src="pngs/incorrect_values.png" width="400"/> </br>
+</br>
+<p align="left">
+    <img src="pngs/incorrect_values.png" width="300"/> </br>
     <em>Incorrect data</em>
 </p>
 </br>
-<p align="center">
-    <img src="pngs/corrected_values.png" width="400"/> </br>
+<p align="left">
+    <img src="pngs/corrected_values.png" width="300"/> </br>
     <em>Corrected data</em>
 </p>
 
