@@ -15,6 +15,7 @@ df = pd.read_csv('IRIS.csv')
 # Saving variable summary to a text file
 def saveSummaryToText():
     sys.stdout = open ('variableSummary.txt', 'w') # sys.stout is standard output to text file
+    print("\n")
     print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^")
     print("Summary Information")
     print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^")
@@ -122,24 +123,29 @@ iris_virginica = df[df["species"] == "Iris-virginica"]
 speciesList = [iris_setosa, iris_versicolor, iris_virginica]
 
 # main program
-# executes continuously until x is entered
-# This menu is printed upon running program, \n creates a new line
-choice = ""
-print("Iris Dataset Main Menu")
-print("1. View basic summary information")
-print("2. View full data set")
-print("3. View boxplot")
-print("4. View violin plot")
-print("5. View histogram")
-print("6. View pair plot")
 
-# while loop
-while choice != "x":
-    choice = input("Please select a menu option from 1-6 (x to quit): ")
+choice = "" # The variable 'choice' is defined and contains an empty string value so that the while loop 
+            # below evaluates as True and the program proceeds to the appropriate stage
 
-    if choice == "1":
-        print("Viewing basic summary information: ")
-        viewTextSummary()
+# The while loop continuously executes until x is entered
+while choice != "x": # when x is entered the while loop evaluates as False and the program ends
+# The input method displays the information between the quotation marks, requesting the user to
+# input an option (1 to 6 or x to quit). The input is assigneed to the variable 'choice' as a string
+    choice = input("\n\nIris Dataset Main Menu \n\
+        1. View basic summary information \n\
+        2. View full data set \n\
+        3. View boxplot \n\
+        4. View violin plot \n\
+        5. View histogram \n\
+        6. View pair plot \n\n\
+    Please select a menu option from 1-6 (x to quit): ") # \n creates a new line
+
+# The if-else statement controls the flow of the program further and executes particular code blocks
+# depending on the value contained in choice
+    if choice == "1": # The value in the variable choice is compared to the string value "1", if they are 
+                      # the same the if statement evaluates to true and the following block of code is executed 
+        print("Viewing basic summary information: ") # Prints the string inside the quotation marks
+        viewTextSummary() # Calls the viewTextSummary() function, executing the code contained within it
     elif choice == "2":
         print("Full data set:")
         viewFull()
@@ -155,12 +161,13 @@ while choice != "x":
     elif choice == "6":
         print("Pair plots compares 2 variables:")
         pairPlot()
-    else:
-        print("You have not entered a number between 1 and 6.")
+    else: # The else statement executes if all of the other statements evaluate to false
+        print("\n\nYou have not entered a number between 1 and 6. Please select one of the options from the menu.") 
+        # The print statement is executed if none of the menu options were selected & advises them to select a menu option
+        
+print("You have quit the program. Goodbye!") # Executes when x is input by the user & the program terminates
 
-print("You have quit the program. Goodbye!")
-
-'''References: 
+'''References:
 https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 https://www.askpython.com/python/python-stdin-stdout-stderr
 https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
