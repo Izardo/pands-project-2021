@@ -146,7 +146,7 @@ Simply using the print() function with the name of the DataFrame in the brackets
 ```
 print(df)
 ```
-<p align="center">
+<p align="left">
     <img src="pngs/figure1.png" width="600"/> </br>
     <em>The typical appearance of a pandas DataFrame</em>
 </p>
@@ -159,8 +159,11 @@ Further, it returns the data type of each attribute. The quantitative are all of
 ```
 df.info()
 ```
-![Screenshot of consice summary output](pngs/figure2.png "Concise summary")</br>
-*Consice summary with pandas*
+<p align="left">
+    <img src="pngs/figure2.png" width="500"/> </br>
+    <em>Consice summary with pandas</em>
+</p>
+
 
 Another useful tool when checking data is getting a count of occurances of a unique value. In our case, it would be beneficial to know the count of each species in the data set. The value_counts() method from the pandas library returns the frequency of unique values in a specified column in descending order, where the first element returned has the highest amount of instances. [4] 
 ```
