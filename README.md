@@ -55,7 +55,9 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Matplotlib - is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
 
-<li>Seaborn - is based on matplotlib and is a data visualisation library known for providing 'a high-level interface for drawing attractive and informative statistical graphics'. [1]</ul>
+<li>Seaborn - is based on matplotlib and is a data visualisation library known for providing 'a high-level interface for drawing attractive and informative statistical graphics'. [1]
+
+<li>Sys - provides multiple functions and variables that can be utilised to manipulate various elements in the python runtime environment. It permits operations which interact with the interpreter.</ul>
 
 ##### Visual Studio Code</br>
 Also known as VSCode, it is an efficient code editor with convenient tools such as debugging, task running and version-contol. Virtual Studio Code's aim is to facilitate developers with quick and effecient 'code-build-debug cycles'. [2] For this project, VSCode was connected to github for faster, simplified commits to the repository. 
