@@ -33,7 +33,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>outputs a scatter plot of each pair of variables.</ul>
 <li>Use screenshots and images to explain your workings.
 <li>Explain what tools are used in your analysis and how you implemented them.
-<li>Discuss compelling examples of how others have analysed the data set
+<li>Discuss interesting examples of how others have analysed the data set
 <li>Write a conclusion with your findings and insights.
 </ol>
 
@@ -62,7 +62,7 @@ Also known as VSCode, it is an efficient code editor with convenient tools such 
 
 References:</br>
 
-[1] "seaborn: statistical data visualisation" Seaborn, 22 Apr. 2021, https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.</br>
+[1] "Seaborn: statistical data visualisation" Seaborn, 22 Apr. 2021, https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.</br>
 [2] "Visual Studio Code FAQ" Visual Studio, 12 Apr 2021, https://code.visualstudio.com/docs/supporting/FAQ#:~:text=Visual%20Studio%20Code%20is%20a,such%20as%20Visual%20Studio%20IDE.
 
 ## 1.0 Introduction to Fisher’s Iris Data Set <a name="FisherIntro"></a>
@@ -105,11 +105,15 @@ The Iris data set that will be studied in this project was obtained from Kaggle.
 
 It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
 
-![Preview data set](pngs/incorrect_values.png "Incorrect data")</br>
-*Incorrect data*
+<p align="center">
+    <img src="pngs/incorrect_values.png" width="400"/> </br>
+    <em>Incorrect data</em>
+</p>
 </br>
-![Preview data set](pngs/corrected_values.png "Correct data")</br>
-*Corrected data*
+<p align="center">
+    <img src="pngs/corrected_values.png" width="400"/> </br>
+    <em>Corrected data</em>
+</p>
 
 References:</br>
 
