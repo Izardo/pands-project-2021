@@ -248,7 +248,7 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram & density plots <a name="Histogram">
 
-The following code was created using FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
+The following code was created using Matplotlib, and FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
 
 ```
 def hist():
@@ -295,7 +295,7 @@ As seen in the plot above, there is significant overlap in the sepal length of t
 
 #### Pair plots
 
-The pair plot builds upon both the histogram and scatter plot in that, it shows data of individual variables as well as the relationship between two variables. 
+The pair plot, created using seaborn and matplotlib, builds upon both the histogram and scatter plot in that it shows the data of individual variables (as density plots) as well as the relationship between two variables. At a glance, distinct clusters can be recognised, especially with regard to the setosa species.
 
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
