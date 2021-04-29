@@ -160,7 +160,7 @@ Further, it returns the data type of each attribute. The quantitative are all of
 df.info()
 ```
 <p align="left">
-    <img src="pngs/figure2.png" width="500"/> </br>
+    <img src="pngs/figure2.png" width="400"/> </br>
     <em>Consice summary with pandas</em>
 </p>
 
@@ -170,19 +170,26 @@ Another useful tool when checking data is getting a count of occurances of a uni
 print(df['species'].value_counts()) 
 print(df['species'].value_counts(normalize=True, dropna=False)*100)
 ```
-![Value_counts()](pngs/value_counts().png "Counts")</br>
-*Count & percentage of each species*
+<p align="left">
+    <img src="pngs/value_counts().png" width="300"/> </br>
+    <em>Count & percentage of count of each species</em>
+</p>
+
 #### Describing the data <a name="Describe"></a>
 
 The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. [5] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
 ```
 describe(df)
 ```
-![Describing the data](pngs/df.describe()1.png "Describing the data")</br>
-*Describing the data using the describe() function fig.1*
+<p align="left">
+    <img src="pngs/df.describe()1.png" width="600"/> </br>
+    <em>Describing the data (1)</em>
+</p>
+<p align="left">
+    <img src="pngs/df.describe()2.png" width="400"/> </br>
+    <em>Describing the data (2)</em>
+</p>
 
-![Describing the data](pngs/df.describe()2.png "Describing the data")</br>
-*Describing the data using the describe() function fig.2*
 
 #### Graphical summary - Box plots & Violin plots <a name="Graphical"></a>
 
