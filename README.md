@@ -34,7 +34,6 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>outputs a scatter plot of each pair of variables.</ul>
 <li>Use screenshots and images to explain your workings.
 <li>Explain what tools are used in your analysis and how you implemented them.
-<li>Discuss interesting examples of how others have analysed the data set
 <li>Write a conclusion with your findings and insights.
 </ol>
 
@@ -309,18 +308,27 @@ References:
 ### 3.0 Using the program: analysis.py <a name="Program">
 
 The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. The program can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+The following python libraries must also be installed before running the program: 
+*Pandas 
+*Numpy
+*Matplotlib.pyplot
+*Seaborn 
+*Sys
+Instructions on how to install these can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
 #### Steps-by-step instructions
 
 1. Open up the command prompt in windows (or terminal on apple machines) and navigate to the folder of the cloned repositoy on your local machine. 
 2. Type 'python analysis.py' and press enter. This will initiate the program in the python shell and display the Iris Data Set Menu.
 3. You will be prompted to enter a menu option of your choice. See image.
-
+<br/><br/>
+<br/><br/>
 <p align="left">
     <img src="/pngs/IrisMenu.png" width="800"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
-
+<br/><br/>
+<br/><br/>
 * Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile. 
 * Option 2: *View full data set* shows all records in the data set.
 * Option 3: *View boxplot* opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
