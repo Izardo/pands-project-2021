@@ -48,6 +48,9 @@ def viewFull():
     pd.set_option('display.max_rows', 150)
     print(df)
 
+# General note: The plt.savefig() lines of code are commented out for ease of use/CPU performance
+
+
 def boxAll():
     sns.set(style="ticks")
     plt.figure(figsize = (12,10))
@@ -80,40 +83,39 @@ iris_versicolor = df[df["species"] == "Iris-versicolor"] # extracts versicolor r
 iris_virginica = df[df["species"] == "Iris-virginica"] # extracts virginica records from data set
 speciesList = [iris_setosa, iris_versicolor, iris_virginica]
 
-# This function plots a histogram & density plot for each attribute
+# This function plots a histogram & density plot for each attribute in the data set using seaborn & matplotlib
 def hist():
     # plots sepal length values
     sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"sepal_length").add_legend(fontsize=10)   # increased legend fontsize # hue inclued each subset (species) of data in the plot
     plt.title("Sepal Length Histogram & Density Plot")
     plt.xlabel("Sepal Length in cm")
     plt.subplots_adjust(top=0.8)
-    plt.savefig('pngs/distinctHist_sepal_length') # saves pngs of plots in pngs folder
+    # plt.savefig('pngs/distinctHist_sepal_length') # saves pngs of plots in pngs folder
     # plots sepal width values
     sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"sepal_width").add_legend(fontsize=10)
     plt.title("Sepal Width Histogram & Density Plot")
     plt.xlabel("Sepal width in cm")
     plt.subplots_adjust(top=0.8)
-    plt.savefig('pngs/distinctHist_sepal_width')
+    # plt.savefig('pngs/distinctHist_sepal_width')
     # plots petal length values
     sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"petal_length").add_legend(fontsize=10)
     plt.title("Petal Length Histogram & Density Plot")
     plt.xlabel("Petal length in cm")
     plt.subplots_adjust(top=0.8)
-    plt.savefig('pngs/distinctHist_petal_length')
+    # plt.savefig('pngs/distinctHist_petal_length')
     # plots petal width values
     sns.FacetGrid(df,hue="species", height=6, legend_out=False).map(sns.distplot,"petal_width").add_legend(fontsize=10)
     plt.title("Petal Width Histogram & Density Plot")
     plt.xlabel("Petal width in cm")
     plt.subplots_adjust(top=0.8)
-    plt.savefig('pngs/distinctHist_petal_width')
+    # plt.savefig('pngs/distinctHist_petal_width')
     # matplotlib opens 4 seperate windows displaying the plots just created
     plt.show()
 
 def pairPlot():
     sns.set(style="darkgrid")
     sns.pairplot(df, hue="species")
-    # plt.figure(figsize=(1,1))
-    plt.savefig('pngs/pairPlot')
+    # plt.savefig('pngs/pairPlot') saves the plot to the pngs folder under the name pairPlot
     plt.show()
 
 # splits the DataFrame into 3 by the "species" attribute so it can be used for creating the histograms & pair plots
@@ -142,11 +144,11 @@ while choice != "x": # when x is entered the while loop evaluates as False and t
 
 # The if-else statement controls the flow of the program further and executes particular code blocks
 # depending on the value contained in choice
-    if choice == "1": # The value in the variable choice is compared to the string value "1", if they are 
-                      # the same the if statement evaluates to true and the following block of code is executed 
+    if choice == "1": # The value in the variable choice is compared to the string value to the right of the equality operator, 
+                      # if they are the same the if statement evaluates to true and the following block of code is executed 
         print("Viewing basic summary information: ") # Prints the string inside the quotation marks
         viewTextSummary() # Calls the viewTextSummary() function, executing the code contained within it
-    elif choice == "2":
+    elif choice == "2": 
         print("Full data set:")
         viewFull()
     elif choice == "3":
@@ -162,7 +164,7 @@ while choice != "x": # when x is entered the while loop evaluates as False and t
         print("Pair plots compares 2 variables:")
         pairPlot()
     else: # The else statement executes if all of the other statements evaluate to false
-        print("\n\nYou have not entered a number between 1 and 6. Please select one of the options from the menu.") 
+        print("\n\nYou have not entered a number between 1 and 6.") 
         # The print statement is executed if none of the menu options were selected & advises them to select a menu option
         
 print("You have quit the program. Goodbye!") # Executes when x is input by the user & the program terminates
