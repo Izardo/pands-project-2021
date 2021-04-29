@@ -23,7 +23,8 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 * [2.0 Analysing the Data](#Analysis)
     * [Histogram & Density Plots](#Histogram) 
     * [Pair Plot](#PairPlot)
-* [3.0 Conclusion](#Conclusion)
+* [3.0 Using the program: analysis.py](#Program)
+* [4.0 Conclusion](#Conclusion)
 ### Project Objectives <a name="Objectives"></a>
 
 <ol><li>Research the data set and write a summary about it.
@@ -160,7 +161,7 @@ Further, it returns the data type of each attribute. The quantitative are all of
 df.info()
 ```
 <p align="left">
-    <img src="pngs/figure2.png" width="400"/> </br>
+    <img src="pngs/figure2.png" width="350"/> </br>
     <em>Consice summary with pandas</em>
 </p>
 
@@ -303,4 +304,10 @@ References:
 
 [1] "seaborn.FacetGrid" Seaborn, 27 Apr. 2021, https://seaborn.pydata.org/generated/seaborn.FacetGrid.html</br>
 [2] "Exploratory Data Analysis: Uni-variate analysis of Iris Data set" Pratik Nabriya, 20 Apr. 2021, https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40Exploratory</br>
-[2] 
+[3]
+
+### 3.0 Using the program: analysis.py <a name="Program">
+
+The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. It can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+
+### 4.0 Conclusion <a name="Conclusion">
