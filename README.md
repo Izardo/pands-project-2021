@@ -295,7 +295,7 @@ As seen in the plot above, there is significant overlap in the sepal length of t
 
 #### Pair plots
 
-The pair plot, created using seaborn and matplotlib, builds upon both the histogram and scatter plot in that it shows the data of individual variables (as density plots) as well as the relationship between two variables. At a glance, distinct clusters can be recognised, especially with regard to the setosa species.
+This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays data of individual variables (as density plots) as well as the relationship between pairs of two variables. Distinct clusters are apparent at a glance, especially with regard to the setosa species.
 
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
@@ -308,6 +308,14 @@ References:
 
 ### 3.0 Using the program: analysis.py <a name="Program">
 
-The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. It can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. The program can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+
+#### Steps-by-step instructions
+
+1. Open up the command prompt in windows (or terminal on apple machines) and navigate to the folder of the cloned repositoy on your local machine. 
+2. Type 'python analysis.py' and press enter. This will initiate the program in the python shell and display the Iris Data Set Menu.
+3. You will be prompted to enter a menu option of your choice. See image.
+![Pair Plot](/pngs/IrisMenu.png "Iris Menu")</br>
+*Iris Data Set Menu*
 
 ### 4.0 Conclusion <a name="Conclusion">
