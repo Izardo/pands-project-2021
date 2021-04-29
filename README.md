@@ -317,5 +317,12 @@ The analysis.py program in this repository was written using python 3.8. To run 
 3. You will be prompted to enter a menu option of your choice. See image.
 ![Pair Plot](/pngs/IrisMenu.png "Iris Menu")</br>
 *Iris Data Set Menu*
+* Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile. 
+* Option 2: *View full data set* shows all records in the data set.
+* Option 3: *View boxplot* opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
+* Option 4: *View violin plot* opens a new window displaying 4 graphical plots (one for each variable) for all three species.
+* Option 5: *View histogram* opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
+* Option 6: *View pair plot* opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species. 
+* Pressing x quits the program.
 
 ### 4.0 Conclusion <a name="Conclusion">
