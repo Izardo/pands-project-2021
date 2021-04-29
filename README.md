@@ -104,6 +104,7 @@ The Iris data set that will be studied in this project was obtained from Kaggle.
 #### Correcting the data <a name="Correct"></a>
 
 It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
+
 </br>
 <p align="left">
     <img src="pngs/incorrect_values.png" width="300"/> </br>
@@ -114,6 +115,7 @@ It has been noted that some Iris datasets available contain incorrect values. [3
     <img src="pngs/corrected_values.png" width="300"/> </br>
     <em>Corrected data</em>
 </p>
+
 
 References:</br>
 
@@ -144,8 +146,11 @@ Simply using the print() function with the name of the DataFrame in the brackets
 ```
 print(df)
 ```
-![Preview data set](pngs/figure1.png "Preview")</br>
-*The typical appearance of a pandas DataFrame*
+<p align="center">
+    <img src="pngs/figure1.png" width="600"/> </br>
+    <em>The typical appearance of a pandas DataFrame</em>
+</p>
+
 #### The basics (Shape, attributes, counts etc.) <a name="TheBasics"></a>
 
 The info() method prints a concise summary of the dataframe. [3] It tells us the type of data we are dealing with. The shape of our data is a 2-dimensional array with 150 rows and 5 columns. In Pandas terminology, this type of data is known as a DataFrame. Four of the columns (or atrributes) are of quantitative type: sepal_length, sepal_width, petal_length, petal_width. While one, species, is categorical. The first four attributes are independent variables, while the class label is dependent. We can think of them as having a cause and effect realtionship - the class label is dependent on the value of the attributes. 
