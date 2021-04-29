@@ -9,12 +9,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
 
-# reads in csv file with pandas, converts it to a DataFrame object and assigns it to variable 'df'
+# reads in csv file with pandas, converts it to a DataFrame object & assigns it to variable 'df'
 df = pd.read_csv('IRIS.csv')
 
-# Saving variable summary to a text file
-def saveSummaryToText():
-    sys.stdout = open ('variableSummary.txt', 'w') # sys.stout is standard output to text file
+# Function saves variable summary to a text file | Ref: [1]
+def saveSummaryToText(): # Creates a function called saveSummaryToText()
+    # sys.stdout is used to print text to a text file inside the paranthesis are two +
+    # parameters: file path & 'w' which opens a file for writing | Ref: [2]
+    sys.stdout = open ('variableSummary.txt', 'w')
     print("\n")
     print("*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^")
     print("Summary Information")
@@ -22,39 +24,45 @@ def saveSummaryToText():
     print("------------------------------------------------------------------------------")
     print("Preview of the first & last 5 records")
     print("------------------------------------------------------------------------------")
-    print(df) # print(df) prints first and last 5 lines of dataset
+    print(df) # prints first & last 5 lines of dataset
     print("------------------------------------------------------------------------------")
     print("Basic Information (Data Shape, Data Types etc.)")
     print("------------------------------------------------------------------------------")
-    print(df.info()) # prints useful information about data set
+    print(df.info()) # prints useful information about the data set
     print("------------------------------------------------------------------------------")
     print("Statistical Summary of each Variable (Grouped by Species)")
     print("------------------------------------------------------------------------------")
-    # displays a basic statistical summary of all variables side-by-side
-    print(df.groupby('species').describe(include='all')) # include='all' returns all columns
+    # decribe() displays a basic statistical summary of all variables & uses groupby() +
+    # method to group by species, include='all' returns all columns | Ref: [3]
+    print(df.groupby('species').describe(include='all'))
     print("------------------------------------------------------------------------------")
     print("Count of Species in Percentile")
     print("------------------------------------------------------------------------------")
-    # returns the percentage of occurances per species
-    print(df['species'].value_counts(normalize=True, dropna=False)*100) # dropna=False excludes counting of NaN(s)
+    # accesses the species attribute in the data frame & returns the percentage of occurances +
+    # per species.  normalize=True returns relative frequencies of the species attribute, +
+    # dropna=False excludes counting of NaN(s) | Ref: [4]
+    print(df['species'].value_counts(normalize=True, dropna=False)*100)
 
-# prints contents of 'variableSummary.txt' file
-def viewTextSummary():
-    text = open('variableSummary.txt', 'r') # opens 'variableSummary.txt' file in read mode and assigns it to the variable text
-    print(text.read()) # uses print statement & read() method to read & print contents of file
+# Function prints contents of 'variableSummary.txt' file
+def viewTextSummary(): # creates a function called viewTextSummary()
+    # opens 'variableSummary.txt' file in read mode and assigns it to the variable text
+    text = open('variableSummary.txt', 'r')
+    # uses print statement & read() method to read & print contents of file
+    print(text.read())
 
-# prints full DataFrame
-def viewFull():
+# Function prints full DataFrame
+def viewFull(): # defines a function called viewFull()
     pd.set_option('display.max_rows', 150)
     print(df)
 
-# General note: The plt.savefig() lines of code are commented out for ease of use/CPU performance
+# General note: The plt.savefig() lines of code that save code to a specified path are + 
+# commented out for improved CPU performance
 
-
+# Function creates 4 box plots & opens them in a single window
 def boxAll():
-    sns.set(style="ticks")
-    plt.figure(figsize = (12,10))
-    plt.subplot(2,2,1)
+    sns.set(style="ticks") # sets style using the seaborn library
+    plt.figure(figsize = (12,10)) # specifies figure size using matplotlib.pyplot
+    plt.subplot(2,2,1) # creates subplot with parameters: rows, columns & index | Ref: [5]
     sns.boxplot(x='species',y ='sepal_length',data=df)
     plt.subplot(2,2,2)
     sns.boxplot(x='species',y='sepal_width',data=df)
@@ -62,7 +70,8 @@ def boxAll():
     sns.boxplot(x='species',y='petal_length',data=df)
     plt.subplot(2,2,4)
     sns.boxplot(x='species',y='petal_width',data=df)
-    plt.show()
+    # plt.savefig('pngs/boxplots.png')
+    plt.show() # matplotlib opens a new window displaying the plots
 
 def violinAll():
     sns.set(style="whitegrid")
@@ -125,7 +134,6 @@ iris_virginica = df[df["species"] == "Iris-virginica"]
 speciesList = [iris_setosa, iris_versicolor, iris_virginica]
 
 # main program
-
 choice = "" # The variable 'choice' is defined and contains an empty string value so that the while loop 
             # below evaluates as True and the program proceeds to the appropriate stage
 
@@ -133,7 +141,7 @@ choice = "" # The variable 'choice' is defined and contains an empty string valu
 while choice != "x": # when x is entered the while loop evaluates as False and the program ends
 # The input method displays the information between the quotation marks, requesting the user to
 # input an option (1 to 6 or x to quit). The input is assigneed to the variable 'choice' as a string
-    choice = input("\n\nIris Dataset Main Menu \n\
+    choice = input("\n\nIris Data Set Menu \n\
         1. View basic summary information \n\
         2. View full data set \n\
         3. View boxplot \n\
@@ -170,10 +178,11 @@ while choice != "x": # when x is entered the while loop evaluates as False and t
 print("You have quit the program. Goodbye!") # Executes when x is input by the user & the program terminates
 
 '''References:
-https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
-https://www.askpython.com/python/python-stdin-stdout-stderr
-https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
-https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
+[1] https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+[2] https://www.askpython.com/python/python-stdin-stdout-stderr
+[3] https://stackoverflow.com/questions/40346436/describe-function-with-groupby-pandas-python-3-5-1
+[4] https://stackoverflow.com/questions/14281871/given-a-pandas-series-that-represents-frequencies-of-a-value-how-can-i-turn-tho
+[5] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
 https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
 boxAll # Adopted from: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40#:~:text=Iris%20data%20is%20a%20multivariate,and%20petal%20width%2C%20in%20centimeters.&text=It%20consists%20of%20a%20set,Class%2DLabels(Species).
 https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
