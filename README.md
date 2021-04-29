@@ -317,7 +317,7 @@ The analysis.py program in this repository was written using python 3.8. To run 
 3. You will be prompted to enter a menu option of your choice. See image.
 
 <p align="left">
-    <img src="/pngs/IrisMenu.png" width="500"/> </br>
+    <img src="/pngs/IrisMenu.png" width="800"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
 
