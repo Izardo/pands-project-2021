@@ -37,9 +37,9 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 <li>Write a conclusion with your findings and insights.
 </ol>
 
-Note: The code snippets contained in this repository are explained in a general sense only. Comprehensive code explanations are available in the analysis.py file so as to not clutter this readme unnecessarily. 
-
 <em>The project description can be found [here](./pdfs/Project_2021_description.pdf).</em>
+
+Note: The code snippets contained in this repository are explained in a general sense only. Comprehensive code explanations are available in the analysis.py file so as to not clutter this readme unnecessarily. 
 
 ### Tools used <a name="Tools"></a>
 
