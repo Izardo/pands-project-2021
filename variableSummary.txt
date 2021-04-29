@@ -1,3 +1,5 @@
+
+
 *^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
 Summary Information
 *^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
@@ -48,7 +50,18 @@ Iris-virginica          50.0  6.588  0.635880  4.9  6.225  6.5  6.9  ...       2
 ------------------------------------------------------------------------------
 Count of Species in Percentile
 ------------------------------------------------------------------------------
-Iris-setosa        33.333333
 Iris-virginica     33.333333
 Iris-versicolor    33.333333
+Iris-setosa        33.333333
 Name: species, dtype: float64
+
+
+Iris Dataset Main Menu 
+        1. View basic summary information 
+        2. View full data set 
+        3. View boxplot 
+        4. View violin plot 
+        5. View histogram 
+        6. View pair plot 
+
+    Please select a menu option from 1-6 (x to quit): 
