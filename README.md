@@ -213,7 +213,7 @@ def boxAll():
 *Box plots for each variable*
 
 
-An important piece of information that the box plot provides is the number of outliers in the data. There are not many which denotes no significant impact on our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. However, while box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
+As mentioned, boxplots are important for the detection of outliers. There are very few in our data, meaning they will not significantly impact our analysis. Another useful observation from the box plot above is the clear difference in size and form between the Iris-setosa and the other two species. The setosa has smaller petals and proportionally wider sepals than the versicolor and virginica. However, while box plots provides some general information about the distribution of our data, it lacks specificity. Violin plots display the distribution of data at each point on the plot, providing a more in-depth picture of our data. 
 ```
 def allViolin():
     sns.set(style="whitegrid")
