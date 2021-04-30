@@ -22,7 +22,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [Graphical Summary - Box & Violin Plots](#Graphical)
 * [2.0 Analysing the Data](#Analysis)
     * [Histogram & Density Plots](#Histogram) 
-    * [Pair Plot](#PairPlot)
+    * [Pair Plots](#PairPlot)
 * [3.0 Using the Program](#Program)
 * [4.0 Conclusion](#Conclusion)
 
@@ -54,7 +54,7 @@ Python is a widely used programming language, specifically in the world of data 
 
 <li>Pandas - for data manipulation and analysis. It reads and writes data while providing data structures (the DataFrame object) and tools for utilising numerical tables in python. 
 
-<li>Matplotlib - is used for data visualisation and creating graphical plots in Python and NumPy. Matplotlib is designed in such a way that graphical plots can be created with minimal lines of code.
+<li>Matplotlib - is used for data visualisation and creating graphical plots in Python and NumPy. It is designed in such a way that graphical plots can be created with minimal lines of code.
 
 <li>Seaborn - is based on matplotlib and is a data visualisation library known for providing 'a high-level interface for drawing attractive and informative statistical graphics'. [1]
 
@@ -102,11 +102,11 @@ References:</br>
 [4] Efron, Bradley (1998), "R. A. Fisher in the 21st century", Statistical Science, 13 (2): 95–122, doi:10.1214/ss/1028905930.
 ### 1.1 Acquiring the data <a name="1.1"></a>
 
-The Iris data set that will be studied in this project was obtained from Kaggle. [1] Kaggle is an online machine learning environment and data science community. [2] It offers competitions in machine learning, datasets and access to educational content. The data sets are published by users and are then available for others to use freely. Data sets are scored by users for their usability. The chosen data set chosen for this project had had a usability score of 8.2, which was deemed as satisfactory.
+The Iris data set that will be studied in this project was obtained from Kaggle. [1] Kaggle is an online machine learning environment and data science community. [2] It offers competitions in machine learning, datasets and access to educational content. The data sets are published by users and are then available for others to use freely. Data sets are scored by users for their usability. The data set chosen for this project had had a usability score of 8.2, which was deemed as satisfactory.
 
 #### Correcting the data <a name="Correct"></a>
 
-It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the dataset used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris dataset) with the incorrect values, followed by the corrected values:
+It has been noted that some Iris datasets available contain incorrect values. [3] For this reason, the data set used for this project was cross-referenced with Fisher's original dataset. [4] Any disparities were corrected so that the current data matched the original. Record numbers 35 and 38 in the original dataset were incongruent with the data in the current dataset. It should be noted that the corresponding rows on the current dataset are 36 and 39, owing to an additional row at index one which specifies the attributes. The error in row 36 was in the fourth value, while there were errors in row 39 in the second and third values. Seen below is the CSV file (containing the Iris data set) with the incorrect values, followed by the corrected values:
 
 </br>
 <p align="left">
@@ -139,13 +139,13 @@ import seaborn as sns
 ```
 #### Importing the data <a name="Import"></a>
 
-Next, we load our IRIS.csv file with pandas. [1] CSV stands for comma-seperated value and this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files, while DataFrames are pandas way of storing 2 dimensional data. [2] The DataFrame is assigned to the variable 'df' for future reference and use. 
+Next, we load our IRIS.csv file with pandas. [1] CSV stands for comma-seperated values and this file type is commonly used in data analysis. Pandas is a very useful way to manipulate data and CSV files, while DataFrames are pandas way of storing 2 dimensional data. [2] The DataFrame is assigned to the variable 'df' for future reference and use. 
 ```
 df = pd.read_csv('IRIS.csv')
 ```
 #### Previewing the data <a name="Preview"></a>
 
-Simply using the print() function with the name of the DataFrame in the brackets will give a preview of the data, printing the first and last 5 rows of the dataset. This gives an initial "feel" for the data and the values contained in the set. 
+Simply using the print() function with the name of the DataFrame in the brackets will give a preview of the data, printing the first and last 5 rows of the data set. This gives an initial "feel" for the data and the values contained in the set. 
 ```
 print(df)
 ```
@@ -180,7 +180,7 @@ print(df['species'].value_counts(normalize=True, dropna=False)*100)
 
 #### Describing the data <a name="Describe"></a>
 
-The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. [5] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots is the output of the describe() method on our data:
+The describe() function, from the pandas library, outputs a basic statistical summary of the columns in our DataFrame, grouping them by the 'species' attribute. [5] Specifically, this method returns the: count, mean (or average), standard deviation, minimum value, lower quartile (25th percentile), median (50th percentile), upper quartile (75 percentile) and maximum value. This type of analysis is univariate as we are only observing the values of individual attributes and not the relationship between them. The following screenshots show the output of the describe() method on our data.
 ```
 describe(df)
 ```
@@ -257,7 +257,7 @@ iris_versicolor = df[df["species"] == "Iris-versicolor"]
 iris_virginica = df[df["species"] == "Iris-virginica"]
 ```
 
-The following code was created using Matplotlib, and FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
+The following code was created using Matplotlib and FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
 
 ```
 def hist():
@@ -324,7 +324,7 @@ def pairPlot():
 The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points (shown below). The setosa (in blue) is isolated in the bottom-left corner. Indicating that petal length and width is easily sufficient for distinguishing the setosa from the versicolor and virginica. The versicolor and the virginica have hardly any intersecting points indicating that those species can generally be distinguished from each other. There will be, however, misclassification of the few species whose measurements lie in the overlap range between the two species. 
 
 <p align="center">
-    <img src="/pngs/petal_length&petal_width.png" width="20"/> </br>
+    <img src="/pngs/petal_length&petal_width.png" width="200"/> </br>
     <em>Petal length & petal width</em>
 </p>
 
