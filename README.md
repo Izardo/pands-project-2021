@@ -368,4 +368,9 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 
 ### 4.0 Conclusion <a name="Conclusion">
 
-Use two variables to classify - petal length and petal width most relaible. Relying solely on the univariate analysis for distinguishing flower species may result in some misclassification due to the overlap.  
+The objective in undertaking this project was to gain an understanding of how to carry out a basic analysis on a data set using python and its libraries. The Iris Flower Data Set was researched thoroughly in preparation for my analysis. First, a statistical summary was produced including a box plot which proved useful for identifying outliers (and thus, determining the integrity of the data) and violin plots which proved helpful in determining the distribution of the data. Even at this early stage, there was a clear indication that the setosa was the most distinct species morphologically. Finally, the histograms and paired scatter plots produced further evidence that the setosa was distinct from the other species. The pair plot portraying the petal length and width attributes showed adequate difference in the morphology of the versicolor and virginica to such an extent that they could be satisfactorily distinguished with only a very small margin of error. 
+
+
+
+
+
