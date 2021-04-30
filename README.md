@@ -250,6 +250,13 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram & density plots <a name="Histogram">
 
+The first step when creating this plot is to split the data into three parts by the species attribute. 
+```
+iris_setosa = df[df["species"] == "Iris-setosa"]
+iris_versicolor = df[df["species"] == "Iris-versicolor"]
+iris_virginica = df[df["species"] == "Iris-virginica"]
+```
+
 The following code was created using Matplotlib, and FacetGrid from the Seaborn library. FacetGrid is a "multi-plot grid for plotting conditional relationships". [1] Each histogram plot was merged with a density plot for observing each variable and comparing the measurements of all three species. The objective in our analysis is try to find at least one variable by which we can use to distinguish the species. [2]
 
 ```
@@ -298,7 +305,13 @@ As seen in the plot above, there is significant overlap in the sepal length of t
 #### Pair plots
 
 This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays data of individual variables (as density plots) as well as the relationship between pairs of two variables. Distinct clusters are apparent at a glance, especially with regard to the setosa species.
-
+```
+def pairPlot():
+    sns.set(style="darkgrid") # sets grid style using the seaborn library
+    sns.pairplot(df, hue="species")
+    plt.savefig('pngs/pairPlot')pairPlot
+    plt.show()
+```
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
 
