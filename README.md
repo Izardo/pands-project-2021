@@ -23,7 +23,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
 * [2.0 Analysing the Data](#Analysis)
     * [Histogram & Density Plots](#Histogram) 
     * [Pair Plot](#PairPlot)
-* [3.0 Using the program: analysis.py](#Program)
+* [3.0 Using the Program](#Program)
 * [4.0 Conclusion](#Conclusion)
 ### Project Objectives <a name="Objectives"></a>
 
@@ -324,12 +324,10 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 2. Type 'python analysis.py' and press enter. This will initiate the program in the python shell and display the Iris Data Set Menu.
 3. You will be prompted to enter a menu option of your choice. See image.
 <br/><br/>
-<br/><br/>
 <p align="left">
     <img src="/pngs/IrisMenu.png" width="800"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
-<br/><br/>
 <br/><br/>
 * Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile. 
 * Option 2: *View full data set* shows all records in the data set.
