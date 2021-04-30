@@ -250,7 +250,7 @@ https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet
 
 #### Histogram & density plots <a name="Histogram">
 
-The first step when creating this plot is to split the data into three parts by the species attribute. 
+The first step when creating this plot was to split the data into three parts by the species attribute. 
 ```
 iris_setosa = df[df["species"] == "Iris-setosa"]
 iris_versicolor = df[df["species"] == "Iris-versicolor"]
@@ -294,13 +294,19 @@ As seen in the plot above, there is significant overlap in the sepal length of t
     <img src="/pngs/distinctHist_sepal_width.png" width="400"/> </br>
 </p>
 
+We can observe even more overlap in this plot than the last. As a result, sepal width is not also unsuitable for classifying the iris flowers. 
+
 <p align="center">
     <img src="/pngs/distinctHist_petal_length.png" width="400"/> </br>
 </p>
 
+The setosa species stands out in that there is practically no overlap with the other species, which is promising for potential classification. The other two species have some overlap in terms of petal length, however, the overlap is relatively small. 
+
 <p align="center">
     <img src="/pngs/distinctHist_petal_width.png" width="400"/> </br>
 </p>
+
+This visualisation clearly displays a distinct setosa species and minimal overlap between the versicolor and virginica, which is shown with the density curve. Petal width also appears promising for species classification in terms of univariate analysis. Seeing that there is still some overlap between the versicolor and virginica, further analysis is advantagous in this case. The following section focuses on bi-variate analysis to determine which feature(s) would be optimal for classifying the species. 
 
 #### Pair plots
 
