@@ -324,7 +324,7 @@ def pairPlot():
 The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points. 
 
 <p align="center">
-    <img src="/pngs/petal_length&petal_width.png" width="400"/> </br>
+    <img src="/pngs/petal_length&petal_width.png" width="250"/> </br>
     <em>Petal length & petal width</em>
 </p>
 
