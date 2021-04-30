@@ -313,7 +313,7 @@ This visualisation clearly displays a distinct setosa species and minimal overla
 This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays the data of individual variables (as density plots) as well as the relationship between pairs of two variables. Of course, some plots are redundant in that they are simply the inverse of another plot presenting the same pair. Straight away, distinct clusters are apparent on many plots especially with regard to the setosa species.
 ```
 def pairPlot():
-    sns.set(style="darkgrid") # sets grid style using the seaborn library
+    sns.set(style="darkgrid")
     sns.pairplot(df, hue="species")
     plt.savefig('pngs/pairPlot')pairPlot
     plt.show()
@@ -323,8 +323,10 @@ def pairPlot():
 
 The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points. 
 
-![PL/PW](/pngs/petal "PL/PW")</br>
-*Petal length & petal width*
+<p align="center">
+    <img src="/pngs/petal_length&petal_width.png" width="400"/> </br>
+    <em>Petal length & petal width</em>
+</p>
 
 References:
 
