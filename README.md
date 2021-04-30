@@ -331,6 +331,7 @@ References:
 
 The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. The program can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 </br>
+</br>
 The following python libraries must also be installed before running the program:</br>
 *Pandas</br>
 *Numpy</br>
@@ -351,12 +352,12 @@ Instructions on how to install these can be found [here](https://packaging.pytho
     <em>Iris Data Set Menu</em>
 </p>
 
-<ul><li>Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.</
-<li>Option 2: *View full data set* shows all records in the data set.
-<li>Option 3: *View boxplot* opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
-<li>Option 4: *View violin plot* opens a new window displaying 4 graphical plots (one for each variable) for all three species.
-<li>Option 5: *View histogram* opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
-<li>Option 6: *View pair plot* opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species.
+<ul><li>Option 1: <em>View basic summary information</em> gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.</
+<li>Option 2: <em>View full data set</em> shows all records in the data set.
+<li>Option 3: <em>View boxplot</em> opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
+<li>Option 4: <em>View violin plot</em> opens a new window displaying 4 graphical plots (one for each variable) for all three species.
+<li>Option 5: <em>View histogram</em> opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
+<li>Option 6: <em>View pair plot</em> opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species.
 <li>Pressing x quits the program.</ul>
 
 ### 4.0 Conclusion <a name="Conclusion">
