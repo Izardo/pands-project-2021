@@ -325,7 +325,7 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 3. You will be prompted to enter a menu option of your choice. See image.
 
 <p align="left">
-    <img src="/pngs/IrisMenu.png" width="700"/> </br>
+    <img src="/pngs/IrisMenu.png" width="600"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
 <br/><br/>
