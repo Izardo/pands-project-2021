@@ -310,7 +310,7 @@ This visualisation clearly displays a distinct setosa species and minimal overla
 
 #### Pair plots
 
-This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays the data of individual variables (as density plots) as well as the relationship between pairs of two variables. Distinct clusters are apparent at straight away, especially with regard to the setosa species.
+This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays the data of individual variables (as density plots) as well as the relationship between pairs of two variables. Of course, some plots are redundant in that they are simply the inverse of another plot presenting the same pair. Straight away, distinct clusters are apparent on many plots especially with regard to the setosa species.
 ```
 def pairPlot():
     sns.set(style="darkgrid") # sets grid style using the seaborn library
@@ -318,8 +318,13 @@ def pairPlot():
     plt.savefig('pngs/pairPlot')pairPlot
     plt.show()
 ```
-![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
+![Pair Plot](/pngs/petal length&petal width.png "Pair Plot")</br>
 *Pair Plot*
+
+The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points. 
+
+![PL/PW](/pngs/petal "PL/PW")</br>
+*Petal length & petal width*
 
 References:
 
@@ -338,7 +343,6 @@ The following python libraries must also be installed before running the program
 *Matplotlib.pyplot</br>
 *Seaborn</br>
 *Sys</br>
-</br>
 Instructions on how to install these can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
 #### Steps-by-step instructions
@@ -352,7 +356,7 @@ Instructions on how to install these can be found [here](https://packaging.pytho
     <em>Iris Data Set Menu</em>
 </p>
 
-<ul><li>Option 1: <em>View basic summary information</em> gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.</
+<ul><li>Option 1: <em>View basic summary information</em> gives a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.
 <li>Option 2: <em>View full data set</em> shows all records in the data set.
 <li>Option 3: <em>View boxplot</em> opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
 <li>Option 4: <em>View violin plot</em> opens a new window displaying 4 graphical plots (one for each variable) for all three species.
