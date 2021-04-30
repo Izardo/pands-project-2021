@@ -25,6 +25,7 @@ Many thanks to lecturer Andrew Beatty for a thoroughly informative and enjoyable
     * [Pair Plot](#PairPlot)
 * [3.0 Using the Program](#Program)
 * [4.0 Conclusion](#Conclusion)
+
 ### Project Objectives <a name="Objectives"></a>
 
 <ol><li>Research the data set and write a summary about it.
@@ -328,13 +329,13 @@ Instructions on how to install these can be found [here](https://packaging.pytho
     <img src="/pngs/IrisMenu.png" width="600"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
-<br/><br/>
-* Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile. 
-* Option 2: *View full data set* shows all records in the data set.
-* Option 3: *View boxplot* opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
-* Option 4: *View violin plot* opens a new window displaying 4 graphical plots (one for each variable) for all three species.
-* Option 5: *View histogram* opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
-* Option 6: *View pair plot* opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species. 
-* Pressing x quits the program.
+
+<ul><li>Option 1: *View basic summary information* gives: a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.</
+<li>Option 2: *View full data set* shows all records in the data set.
+<li>Option 3: *View boxplot* opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
+<li>Option 4: *View violin plot* opens a new window displaying 4 graphical plots (one for each variable) for all three species.
+<li>Option 5: *View histogram* opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
+<li>Option 6: *View pair plot* opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species.
+<li>Pressing x quits the program.
 
 ### 4.0 Conclusion <a name="Conclusion">
