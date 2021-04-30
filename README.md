@@ -294,7 +294,7 @@ As seen in the plot above, there is significant overlap in the sepal length of t
     <img src="/pngs/distinctHist_sepal_width.png" width="400"/> </br>
 </p>
 
-We can observe even more overlap in this plot than the last. As a result, sepal width is not also unsuitable for classifying the iris flowers. 
+We can observe greater overlap in this plot than the last. As a result, sepal width is also unsuitable for classifiying the flowers. 
 
 <p align="center">
     <img src="/pngs/distinctHist_petal_length.png" width="400"/> </br>
@@ -306,11 +306,11 @@ The setosa species stands out in that there is practically no overlap with the o
     <img src="/pngs/distinctHist_petal_width.png" width="400"/> </br>
 </p>
 
-This visualisation clearly displays a distinct setosa species and minimal overlap between the versicolor and virginica, which is shown with the density curve. Petal width also appears promising for species classification in terms of univariate analysis. Seeing that there is still some overlap between the versicolor and virginica, further analysis is advantagous in this case. The following section focuses on bi-variate analysis to determine which feature(s) would be optimal for classifying the species. 
+This visualisation clearly displays a distinct setosa species and minimal overlap between the versicolor and virginica, shown here with the density curve. Petal width also appears promising for distinguishing the species in terms of univariate analysis. Seeing that there is still some overlap between the versicolor and virginica, further analysis is advantagous in this case. The following section focuses on bi-variate analysis to determine which feature(s) would be optimal for classifying the flowers.
 
 #### Pair plots
 
-This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays data of individual variables (as density plots) as well as the relationship between pairs of two variables. Distinct clusters are apparent at a glance, especially with regard to the setosa species.
+This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays the data of individual variables (as density plots) as well as the relationship between pairs of two variables. Distinct clusters are apparent at straight away, especially with regard to the setosa species.
 ```
 def pairPlot():
     sns.set(style="darkgrid") # sets grid style using the seaborn library
@@ -330,12 +330,12 @@ References:
 ### 3.0 Using the program: analysis.py <a name="Program">
 
 The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. The program can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
-The following python libraries must also be installed before running the program: 
-*Pandas 
-*Numpy
-*Matplotlib.pyplot
-*Seaborn 
-*Sys
+The following python libraries must also be installed before running the program:</br>
+*Pandas</br>
+*Numpy</br>
+*Matplotlib.pyplot</br>
+*Seaborn</br>
+*Sys</br>
 Instructions on how to install these can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
 #### Steps-by-step instructions
@@ -358,3 +358,5 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 <li>Pressing x quits the program.</ul>
 
 ### 4.0 Conclusion <a name="Conclusion">
+
+Use two variables to classify - petal length and petal width most relaible. Relying solely on the univariate analysis for distinguishing flower species may result in some misclassification due to the overlap.  
