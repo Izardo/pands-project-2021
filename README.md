@@ -321,7 +321,7 @@ def pairPlot():
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
 
-The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points (shown below). The setosa (in blue) is isolated in the bottom-left corner. Indicating that petal length and width is easily sufficient for distinguishing the setosa from the versicolor and virginica. The versicolor and the virginica have hardly any intersecting points indicating that those species can generally be distinguished from each other. There will be, however, misclassification of the few species whose measurements lie in the overlap range between the two species. 
+The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points (shown below). The setosa (in blue) is isolated in the bottom-left corner. Indicating that petal length and width is easily sufficient for distinguishing the setosa from the versicolor and virginica. The versicolor and the virginica have hardly any intersecting points indicating that those species can generally be distinguished from each other. There will be however, misclassification of the flowers whose measurements lie in the overlap range between the two species. 
 
 <p align="center">
     <img src="/pngs/petal_length&petal_width.png" width="200"/> </br>
@@ -340,11 +340,11 @@ The analysis.py program in this repository was written using python 3.8. To run 
 </br>
 </br>
 The following python libraries must also be installed before running the program:</br>
-*Pandas</br>
-*Numpy</br>
-*Matplotlib.pyplot</br>
-*Seaborn</br>
-*Sys</br>
+<ul><li>Pandas</br>
+<li>Numpy</br>
+<li>Matplotlib.pyplot</br>
+<li>Seaborn</br>
+<li>Sys</br>
 Instructions on how to install these can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
 #### Steps-by-step instructions
