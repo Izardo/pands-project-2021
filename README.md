@@ -360,9 +360,9 @@ Instructions on how to install these can be found [here](https://packaging.pytho
     <em>Iris Data Set Menu</em>
 </p>
 
-<ul><li>Option 1: <em>View basic summary information</em> gives a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (Grouped by Species) and the count of species with percentile.
+<ul><li>Option 1: <em>View basic summary information</em> gives a preview of the 5 first and last rows of the data set, the data shape, data types etc., the statistical summary (grouped by Species) and the count of species with percentile.
 <li>Option 2: <em>View full data set</em> shows all records in the data set.
-<li>Option 3: <em>View boxplot</em> opens a new window with displaying 4 graphical plots (one of each variable) for all three species.
+<li>Option 3: <em>View boxplot</em> opens a new window displaying 4 graphical plots (one of each variable) for all three species.
 <li>Option 4: <em>View violin plot</em> opens a new window displaying 4 graphical plots (one for each variable) for all three species.
 <li>Option 5: <em>View histogram</em> opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
 <li>Option 6: <em>View pair plot</em> opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species.
@@ -372,6 +372,7 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 
 The objective in undertaking this project was to gain an understanding of how to carry out a basic analysis on a data set using python and its libraries. The Iris Flower Data Set was researched thoroughly in preparation for my analysis. Then, a statistical summary was produced including a box plot which proved useful for identifying outliers (and thus, determining the integrity of the data) and violin plots which proved helpful in determining the distribution of the data. Even at this early stage, there was a clear indication that the setosa was the most distinct species morphologically. Finally, the histograms and paired scatter plots produced further evidence that the setosa was distinct from the other species. The pair plot portraying the petal length and width attributes showed adequate difference in the morphology of the versicolor and virginica to such an extent that they could be satisfactorily distinguished with only a very small margin of error. 
 
+End
 
 
 
