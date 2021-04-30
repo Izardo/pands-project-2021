@@ -147,7 +147,6 @@ choice = "" # The variable 'choice' is defined and contains an empty string valu
 
 # The while loop continuously executes until x is entered
 while choice != "x": # when x is entered the while loop evaluates as False and the program ends
-
 # The input method displays the information between the quotation marks, requesting the user to -
 # input an option (1 to 6 or x to quit). The input is assigneed to the variable 'choice' as a string -
 # # \n creates a new line
@@ -186,10 +185,8 @@ while choice != "x": # when x is entered the while loop evaluates as False and t
         print("\n\nYou have not entered a number between 1 and 6.") 
         # The print statement is executed if none of the menu options were selected & advises them to 
         # select a menu option
-
 # Executes when x is input by the user & the program terminates        
 print("You have quit the program. Goodbye!") 
-
 
 '''References:
 [1] "Pandas.read_csv" Pandas, 29 Apr. 2021, https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
