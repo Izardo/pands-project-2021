@@ -321,10 +321,10 @@ def pairPlot():
 ![Pair Plot](/pngs/pairPlot.png "Pair Plot")</br>
 *Pair Plot*
 
-The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points. 
+The plots showing sepal length/sepal width have the most overlapping points and therefore, they are the least suitable for distinguishing the flowers. On the other hand, the plots displaying petal length/petal width have almost no overlapping points (shown below). The setosa (in blue) is isolated in the bottom-left corner. Indicating that petal length and width is easily sufficient for distinguishing the setosa from the versicolor and virginica. The versicolor and the virginica have hardly any intersecting points indicating that those species can generally be distinguished from each other. There will be, however, misclassification of the few species whose measurements lie in the overlap range between the two species. 
 
 <p align="center">
-    <img src="/pngs/petal_length&petal_width.png" width="250"/> </br>
+    <img src="/pngs/petal_length&petal_width.png" width="20"/> </br>
     <em>Petal length & petal width</em>
 </p>
 
