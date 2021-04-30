@@ -336,6 +336,6 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 <li>Option 4: *View violin plot* opens a new window displaying 4 graphical plots (one for each variable) for all three species.
 <li>Option 5: *View histogram* opens 4 windows, each displaying a graphical plot of the individual variables, grouped by species.
 <li>Option 6: *View pair plot* opens 1 window displaying 12 plots. Each plot combines the data of two variables, grouped by species.
-<li>Pressing x quits the program.
+<li>Pressing x quits the program.</ul>
 
 ### 4.0 Conclusion <a name="Conclusion">
