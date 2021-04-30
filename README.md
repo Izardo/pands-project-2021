@@ -330,8 +330,8 @@ References:
 ### 3.0 Using the program: analysis.py <a name="Program">
 
 The analysis.py program in this repository was written using python 3.8. To run the program, python must be installed on your machine. The program can then be cloned from the repository using the instructions [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
-The following python libraries must also be installed before running the program:</br>
 </br>
+The following python libraries must also be installed before running the program:</br>
 *Pandas</br>
 *Numpy</br>
 *Matplotlib.pyplot</br>
