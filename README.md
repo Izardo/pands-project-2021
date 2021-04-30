@@ -308,7 +308,7 @@ The setosa species stands out in that there is practically no overlap with the o
 
 This visualisation clearly displays a distinct setosa species and minimal overlap between the versicolor and virginica, shown here with the density curve. Petal width also appears promising for distinguishing the species in terms of univariate analysis. Seeing that there is still some overlap between the versicolor and virginica, further analysis is advantagous in this case. The following section focuses on bi-variate analysis to determine which feature(s) would be optimal for classifying the flowers.
 
-#### Pair plots
+#### Pair plots <a name="PairPlot">
 
 This pair plot was created using seaborn and matplotlib and builds upon both the histogram and scatter plot. It displays the data of individual variables (as density plots) as well as the relationship between pairs of two variables. Of course, some plots are redundant in that they are simply the inverse of another plot presenting the same pair. Straight away, distinct clusters are apparent on many plots especially with regard to the setosa species.
 ```
@@ -368,7 +368,7 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 
 ### 4.0 Conclusion <a name="Conclusion">
 
-The objective in undertaking this project was to gain an understanding of how to carry out a basic analysis on a data set using python and its libraries. The Iris Flower Data Set was researched thoroughly in preparation for my analysis. First, a statistical summary was produced including a box plot which proved useful for identifying outliers (and thus, determining the integrity of the data) and violin plots which proved helpful in determining the distribution of the data. Even at this early stage, there was a clear indication that the setosa was the most distinct species morphologically. Finally, the histograms and paired scatter plots produced further evidence that the setosa was distinct from the other species. The pair plot portraying the petal length and width attributes showed adequate difference in the morphology of the versicolor and virginica to such an extent that they could be satisfactorily distinguished with only a very small margin of error. 
+The objective in undertaking this project was to gain an understanding of how to carry out a basic analysis on a data set using python and its libraries. The Iris Flower Data Set was researched thoroughly in preparation for my analysis. Then, a statistical summary was produced including a box plot which proved useful for identifying outliers (and thus, determining the integrity of the data) and violin plots which proved helpful in determining the distribution of the data. Even at this early stage, there was a clear indication that the setosa was the most distinct species morphologically. Finally, the histograms and paired scatter plots produced further evidence that the setosa was distinct from the other species. The pair plot portraying the petal length and width attributes showed adequate difference in the morphology of the versicolor and virginica to such an extent that they could be satisfactorily distinguished with only a very small margin of error. 
 
 
 
