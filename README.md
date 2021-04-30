@@ -323,9 +323,9 @@ Instructions on how to install these can be found [here](https://packaging.pytho
 1. Open up the command prompt in windows (or terminal on apple machines) and navigate to the folder of the cloned repositoy on your local machine. 
 2. Type 'python analysis.py' and press enter. This will initiate the program in the python shell and display the Iris Data Set Menu.
 3. You will be prompted to enter a menu option of your choice. See image.
-<br/><br/>
+
 <p align="left">
-    <img src="/pngs/IrisMenu.png" width="800"/> </br>
+    <img src="/pngs/IrisMenu.png" width="700"/> </br>
     <em>Iris Data Set Menu</em>
 </p>
 <br/><br/>
