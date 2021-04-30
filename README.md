@@ -344,7 +344,7 @@ The following python libraries must also be installed before running the program
 <li>Numpy</br>
 <li>Matplotlib.pyplot</br>
 <li>Seaborn</br>
-<li>Sys</br>
+<li>Sys</br></ul>
 Instructions on how to install these can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
 #### Steps-by-step instructions
